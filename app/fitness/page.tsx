@@ -9,14 +9,14 @@ export const metadata: Metadata = {
 
 const comparisonFeatures = [
     {
-        feature: "Format",
-        accountability: "Remote life coaching with weekly calls and daily accountability",
-        coTraining: "In-person only (Austin area)",
+        feature: "Assessment",
+        accountability: "Free virtual 60-minute assessment before acceptance",
+        coTraining: "Assessment covered as part of your Accountability Coaching program",
     },
     {
-        feature: "Focus",
-        accountability: "One meaningful life change at a time, executed through a structured 8-week cycle",
-        coTraining: "Daily and continuous in-person guidance; full immersion",
+        feature: "Format",
+        accountability: "Virtual participation",
+        coTraining: "In-person only (Austin area)",
     },
     {
         feature: "Availability Cap",
@@ -35,13 +35,58 @@ const comparisonFeatures = [
     },
     {
         feature: "Custom Training Routine",
-        accountability: "Personalized weekly plan based on your environment and equipment",
-        coTraining: "Train side-by-side for nearly every session; real-time adjustments",
+        accountability: "Cardio + resistance exercises, reps, sets, & rest protocols",
+        coTraining: "Cycling + resistance exercises, reps, sets, & rest protocols",
+    },
+    {
+        feature: "Training Frequency",
+        accountability: "Daily training schedule; matches my frequency but not my intensity or volume",
+        coTraining: "Daily training schedule; matches my frequency but not my intensity or volume",
+    },
+    {
+        feature: "Cardio Equipment",
+        accountability: "Must have a bike, treadmill, rower, or other cardio equipment",
+        coTraining: "Road bike and an indoor bike trainer included (see note below about the allowance)",
+    },
+    {
+        feature: "First Month Allowance",
+        accountability: "None",
+        coTraining: "$10,000 allowance (may be applied toward a road bike purchase and/or premium home gym equipment)",
+    },
+    {
+        feature: "Gym Access",
+        accountability: "Your existing gym or home setup",
+        coTraining: "Premium gym membership or premium home gym equipment included",
+    },
+    {
+        feature: "Accountability / Coaching Access",
+        accountability: "Daily check-ins via email/text plus weekly 30-minute planning call",
+        coTraining: "Real-time accountability every session plus 24/7 direct on-call access",
+    },
+    {
+        feature: "Weekly Office Hours",
+        accountability: "Optional 10-minute virtual office hour slot each week",
+        coTraining: "All support delivered in person daily",
+    },
+    {
+        feature: "Achieve Anything Framework",
+        accountability: "Daily accountability emails; optional monthly framework check-in conversations; access to the private Achieve Anything community group",
+        coTraining: "Daily and continuous in-person guidance; access to the private Achieve Anything community group",
     },
     {
         feature: "Nutrition",
-        accountability: "Macro guidelines and habit framework; you execute, I steer",
-        coTraining: "Fully custom meal plan plus grocery and prep coaching; done-with-you",
+        accountability: "Custom macro guidelines and habit framework",
+        coTraining: "Fully custom meal plan plus grocery and prep coaching (included)",
+    },
+    {
+        feature: "Recovery",
+        accountability: "Self-managed stretching and rest planning",
+        coTraining: "Weekly massage therapy included plus guided recovery sessions",
+    },
+    {
+        feature: "Tracking & Data",
+        accountability: "Use your own apps or wearables for reporting",
+        coTraining: "All training and tracking equipment and subscriptions (WHOOP, Oura, Garmin, Strava, MyFitnessPal, Zwift, InBody) included",
     },
     {
         feature: "Testing & Diagnostics",
@@ -49,32 +94,190 @@ const comparisonFeatures = [
         coTraining: "VO₂ Max, DEXA, and full-body MRI testing included",
     },
     {
-        feature: "Home Gym / Equipment",
-        accountability: "Use what you have",
-        coTraining: "$10,000 first month allowance for road bike or premium home gym equipment",
+        feature: "Events & Community",
+        accountability: "None",
+        coTraining: "Exclusive events and cycling experiences included",
+    },
+    {
+        feature: "Investment",
+        accountability: "$1,000 / month",
+        coTraining: "$20,000 / month (6-month minimum)",
+    },
+    {
+        feature: "Eligibility",
+        accountability: "Assessment required before acceptance",
+        coTraining: "Completion of at least one month of Accountability Coaching plus invitation",
     }
 ];
 
 const fitnessFaqs = [
     {
-        question: "How do daily check-ins work?",
-        answer: "A quick text or email every day confirming what you did and what is next. I respond with brief guidance or corrections as needed."
+        question: "How do I get started?",
+        answer: "Apply on this page. If accepted, you will receive a private link to book a 60-minute virtual assessment."
+    },
+    {
+        question: "What happens in the assessment?",
+        answer: "We will cover goals, constraints, weekly schedule, equipment and home setup, a brief movement inquiry, and whether Accountability Coaching is the right fit."
+    },
+    {
+        question: "Is the assessment free?",
+        answer: "Yes."
+    },
+    {
+        question: "Do you accept everyone?",
+        answer: "No. Space is limited and each application is reviewed manually."
+    },
+    {
+        question: "What exactly is included in Accountability Coaching?",
+        answer: (
+            <ul className="list-disc pl-6 space-y-2">
+                <li><strong>Daily accountability:</strong> a quick text or email every day confirming what you did and what is next.</li>
+                <li><strong>Weekly 30-minute call:</strong> review results, remove blockers, and adjust the coming week.</li>
+                <li><strong>Personalized weekly plan:</strong> simple, environment-aware programming using the equipment you actually have (gym or home) with clear \"do this today\" instructions.</li>
+                <li><strong>Workouts you can execute:</strong> exercises with sets and reps or time targets and effort cues; cardio includes duration and intensity guidance.</li>
+                <li><strong>Nutrition guidance:</strong> custom macro targets, meal frameworks, grocery and prep coaching, and weekly tweaks. You execute; I steer.</li>
+                <li><strong>Use your tools:</strong> Garmin or Apple Watch, Strava, WHOOP or Oura, MyFitnessPal, and others. I read the signals you share.</li>
+                <li><strong>Daily action expectation:</strong> <em>something</em> every day - training, mobility, or a nutrition check-in. We match my <em>frequency</em>, not my intensity or volume.</li>
+                <li><strong>Missed days:</strong> we adjust and move. Repeated misses trigger a reset on schedule, sleep, and environment.</li>
+                <li><strong>Weekly office hours:</strong> optional 10-minute virtual office hour slot you can book each week for extra questions or problem solving.</li>
+                <li><strong>Monthly performance report:</strong> AI-assisted report summarizing your performance trends, consistency patterns, constraints, and recommended adjustments.</li>
+                <li><strong>Achieve Anything framework app:</strong> full access to the paid version, with daily personalized email check-ins and optional monthly framework check-in conversations and access to the private Achieve Anything community group.</li>
+                <li><strong>Upgrade path:</strong> after at least one month of consistent execution, I may invite you to Co-Training™ if fit and schedules align.</li>
+                <li><strong>Price and terms:</strong> $1,000 per month, month to month. Two-week money-back guarantee on the first month.</li>
+            </ul>
+        )
     },
     {
         question: "What is the Achieve Anything framework?",
-        answer: "An 8-week operating system for turning one meaningful goal into consistent action. It closes the gap between what you say you want, what you actually do, and who you are becoming."
+        answer: (
+            <div className="space-y-4">
+                <p>The Achieve Anything framework is an 8-week operating system for turning one meaningful goal into consistent action. It closes the gap between what you say you want, what you actually do, and who you are becoming.</p>
+                <ul className="list-disc pl-6 space-y-2">
+                    <li><strong>One breakthrough every 8 weeks:</strong> you choose a single 8-week breakthrough in health, money and work, or relationships.</li>
+                    <li><strong>Daily, concrete tasks:</strong> one small, specific action per day so you always know what to do next.</li>
+                    <li><strong>Simple tools for real life:</strong> routines, friction logs, and fallback plans so you adjust instead of restarting.</li>
+                    <li><strong>Review and repeat:</strong> weekly and end of cycle reviews so you can run the same structure again and keep raising your standards.</li>
+                </ul>
+                <p>You can run the framework on your own or combine it with coaching. Both Accountability Coaching and Co-Training™ include full access to the paid version of the framework app and the private Achieve Anything community group.</p>
+            </div>
+        )
     },
     {
-        question: "Is there a guarantee?",
-        answer: "Yes. Two-week money-back guarantee on the first month."
+        question: "What do my first 7 days look like?",
+        answer: (
+            <div className="space-y-4">
+                <p><em>Assessment is already done.</em> Week 1 is action:</p>
+                <ul className="list-disc pl-6 space-y-2">
+                    <li><strong>Day 1 plan (you still train):</strong> lock the week schedule, equipment use, and macro targets.</li>
+                    <li><strong>Strength:</strong> 3-5 strength sessions across the week.</li>
+                    <li><strong>Cardio:</strong> 0-6 days, mixed durations and intensities (some short, some longer).</li>
+                    <li><strong>Mobility:</strong> light mobility on about 6 days (a few minutes minimum on most days).</li>
+                    <li><strong>Rest:</strong> up to 1 full rest day if needed.</li>
+                    <li><strong>Daily check-ins:</strong> quick message confirming what you did and what is next.</li>
+                    <li><strong>Weekly 30-minute call:</strong> end of week review and adjustments.</li>
+                </ul>
+            </div>
+        )
     },
     {
-        question: "How does the assessment work?",
-        answer: "Every application goes through manual review. If accepted, you'll receive a link to schedule your mandatory free 60-minute assessment over Google Meet."
+        question: "How do daily check-ins work?",
+        answer: "Short text or email each day with what you completed, quick notes on wins or issues, and the plan for tomorrow. I reply with nudges or adjustments as needed."
     },
     {
-        question: "Can I run the framework on my own?",
-        answer: "Yes. You can run the framework on your own or combine it with coaching. Both Accountability Coaching and Co-Training™ include full access to the paid version of the framework app."
+        question: "What does the weekly 30-minute call cover?",
+        answer: "We review adherence and metrics, remove obstacles around schedule, sleep, food, and recovery, update macros and training loads, and finalize the plan for the next week."
+    },
+    {
+        question: "What are weekly office hours?",
+        answer: "Once per week I open a limited office hour window. Accountability Coaching clients can book a 10 minute slot inside that window for quick questions, troubleshooting, or decision support between regular calls. It is optional and first come, first served. Co-Training™ support happens in person, so there is no separate office hour booking for Co-Training™."
+    },
+    {
+        question: "What is the monthly performance report?",
+        answer: "Once a month you receive an AI-assisted summary that pulls from your training data, check-ins, and our calls. It highlights performance trends, consistency patterns, and key constraints, then recommends specific adjustments for the next month. Both Accountability Coaching and Co-Training™ receive this report."
+    },
+    {
+        question: "How does the Achieve Anything framework integrate with coaching?",
+        answer: "Both programs get access to the paid version of my Achieve Anything framework app. Accountability Coaching clients receive daily personalized check-in emails from the app plus optional monthly framework check-in conversations with me and access to the private Achieve Anything community group. Co-Training™ uses the same framework, but progress and adjustments are handled directly in our in-person sessions instead of separate automated emails, and those clients also get access to the private Achieve Anything community group."
+    },
+    {
+        question: "Will you write my workouts? How specific are they?",
+        answer: "Yes. You will get exercises, sets and reps or time-based work, rest intervals when needed, and target effort using RPE, heart rate, or power. Cardio sessions include duration and intensity guidance."
+    },
+    {
+        question: "Do you tell me exactly what to eat?",
+        answer: "You get custom macro targets, meal frameworks, grocery and prep guidance, and weekly tweaks. You execute. Full done-for-you meal planning is a Co-Training™ feature."
+    },
+    {
+        question: "What apps and devices should I use?",
+        answer: "In Accountability Coaching we use whatever you already track with: Garmin or Apple, Strava, WHOOP or Oura, MyFitnessPal, and similar tools. I do not force a new ecosystem. In Co-Training™, I provide the full device and subscription stack for you, including training computer, wearables, and key software subscriptions."
+    },
+    {
+        question: "What if my schedule is crazy?",
+        answer: "We design around your life: shorter sessions, split sessions, and stacked days when needed. The non-negotiable is a daily touchpoint."
+    },
+    {
+        question: "What if I miss a day?",
+        answer: "We adjust the week and keep momentum. If misses stack up, we reset constraints such as time of day, session length, and environment so the plan fits your life."
+    },
+    {
+        question: "What if I am traveling or only have minimal equipment?",
+        answer: "I provide \"minimal kit\" variants using bodyweight, hotel gyms, or bands so you hit the intent of the day and keep the streak alive."
+    },
+    {
+        question: "How hard will you push me?",
+        answer: "Accountability Coaching matches my frequency but not my intensity or volume. We progress intelligently - quality and consistency first, then load. Co-Training™ uses the same principle, with closer real-time adjustments during in-person sessions."
+    },
+    {
+        question: "Injuries or medical considerations?",
+        answer: "You need medical clearance. I will modify inside safe limits, prioritize pain-free movement, and maintain progress without unnecessary risk."
+    },
+    {
+        question: "Where are in-person sessions held?",
+        answer: (
+            <ul className="list-disc pl-6 space-y-2">
+                <li><strong>Accountability Coaching:</strong> All Accountability Coaching training is remote.</li>
+                <li><strong>Co-Training™:</strong> more than 90 percent of sessions are in person. We train together at a premium gym or in a premium home gym that I purchase and have installed for you using your included equipment allowance.</li>
+            </ul>
+        )
+    },
+    {
+        question: "Guarantee?",
+        answer: "Accountability Coaching includes a two-week money-back guarantee on the first month. Co-Training™ includes a two-week money-back guarantee on the first six month block."
+    },
+    {
+        question: "Payments?",
+        answer: "Credit or debit card or ACH. Accountability Coaching auto-renews monthly; you can cancel any time before the next billing date. Pauses are allowed for travel or medical reasons with a return plan. Co-Training™ follows its six month term structure."
+    },
+    {
+        question: "Privacy and data?",
+        answer: "You control what you share. I use your data to coach you and do not sell personal data."
+    },
+    {
+        question: "What is Co-Training™?",
+        answer: (
+            <ul className="list-disc pl-6 space-y-2">
+                <li><strong>Train side by side:</strong> we are together for nearly every session.</li>
+                <li><strong>Premium gym access or home gym:</strong> membership included or a premium home setup purchased and installed for you.</li>
+                <li><strong>Cardio modality:</strong> <u>personal road bike required</u> for outdoor and indoor cycling. I provide the indoor trainer for your home setup.</li>
+                <li><strong>Real-time accountability:</strong> immediate feedback and adjustments every session, plus 24/7 direct on call access.</li>
+                <li><strong>Nutrition done with you:</strong> fully custom meal plan plus grocery and prep coaching.</li>
+                <li><strong>Recovery included:</strong> weekly massage therapy and guided recovery sessions.</li>
+                <li><strong>Testing and diagnostics:</strong> VO₂ Max, DEXA, and full-body MRI included.</li>
+                <li><strong>Devices and subscriptions:</strong> all training and tracking equipment and subscriptions (WHOOP, Oura, Garmin, Strava, MyFitnessPal, Zwift, InBody) included.</li>
+                <li><strong>First month allowance:</strong> $10,000 allowance that can be applied toward a road bike purchase or premium home gym equipment.</li>
+                <li><strong>Experiences:</strong> exclusive events and cycling experiences.</li>
+                <li><strong>Paid Achieve Anything Framework:</strong> full access to the complete system, including the private Achieve Anything community group.</li>
+                <li><strong>Terms:</strong> $20,000 per month, six month minimum, invitation only after consistent Accountability Coaching.</li>
+            </ul>
+        )
+    },
+    {
+        question: "Who usually qualifies for Co-Training™?",
+        answer: "Austin-based, able to train 5 to 6 days per week, willing to fully embrace a shared disciplined lifestyle, and ready to invest significantly. You either already ride or are ready to start riding a road bike, with equipment covered by your allowance if needed. Only one client is accepted at a time."
+    },
+    {
+        question: "Do you offer speaking or team sessions?",
+        answer: "Yes. Use the contact page for speaking or team requests."
     }
 ];
 
@@ -104,19 +307,12 @@ export default function FitnessCoachingPage() {
                             It’s a System.
                         </h1>
 
-                        <p className="mt-10 text-2xl font-bold leading-relaxed text-white/95 md:text-3xl lg:max-w-3xl">
-                            I remove the biggest blocker, consistency, by giving you a system that you follow every day, not vague advice you’re left to figure out alone.
-                        </p>
-
                         <div className="mt-16 flex flex-col gap-6 sm:flex-row sm:items-center">
                             <Link
                                 href="#application"
                                 className="rounded-full bg-[#5E17EB] px-12 py-6 text-center text-xl font-black text-white transition-all hover:scale-105 hover:bg-[#7236F2] active:scale-95 shadow-2xl"
                             >
                                 Apply For Assessment
-                            </Link>
-                            <Link href="#faq" className="text-xl font-bold text-white/60 hover:text-white transition-colors border-b border-white/20 pb-1">
-                                Have questions? See the FAQ ↓
                             </Link>
                         </div>
                     </div>
@@ -132,31 +328,48 @@ export default function FitnessCoachingPage() {
                         <h2 className="text-[48px] font-black leading-tight md:text-[64px]">Two ways to work with me</h2>
                         <div className="mt-12 space-y-8 text-2xl leading-relaxed text-black/80 font-medium">
                             <p>
-                                Accountability Coaching: Remote, high-accountability coaching. <br />
-                                Co-Training™: Full-immersion, in-person transformation.
+                                <strong>Accountability Coaching:</strong> Remote, high-accountability coaching. <br />
+                                <strong>Co-Training™:</strong> Full-immersion, in-person transformation.
                             </p>
                             <p>
-                                If you’ve read <Link href="https://amzn.to/3HtU3ua" className="underline font-black decoration-[#5E17EB] decoration-4">Find Meaning Through Relentless Discipline</Link>, you already know what this is about. This isn’t another coaching program. It’s a full commitment to discipline — physically, mentally, and operationally.
+                                If you’ve read <Link href="https://amzn.to/3HtU3ua" className="underline font-black decoration-[#5E17EB] decoration-4 italic">Find Meaning Through Relentless Discipline</Link>, you already know what this is about. This isn’t another coaching program. It’s a full commitment to discipline — physically, mentally, and operationally.
                             </p>
                             <p>
-                                Every person starts with a one-hour assessment. That’s where we decide if you’re ready to begin Accountability Coaching — or, eventually, earn your way into Co-Training™.
+                                Every person starts with a one-hour assessment. That’s where we decide if you’re ready to begin <strong>Accountability Coaching</strong> — or, eventually, earn your way into <strong>Co-Training™</strong>.
                             </p>
+                            <div className="pt-4 flex flex-col gap-4">
+                                <Link href="#how_it_works" className="text-xl font-bold text-[#5E17EB] hover:underline transition-all">
+                                    How it works ↓
+                                </Link>
+                                <Link href="#faq" className="text-xl font-bold text-[#5E17EB] hover:underline transition-all">
+                                    Have questions? See the full FAQ ↓
+                                </Link>
+                            </div>
                         </div>
                     </div>
 
-                    {/* Service Cards */}
-                    <div className="mt-24 grid grid-cols-1 gap-12 lg:grid-cols-2">
-                        <div className="group rounded-[40px] bg-[#F9F9F9] p-12 border border-black/5 transition-all hover:border-black/10">
-                            <h3 className="text-3xl font-black">Accountability Coaching</h3>
-                            <p className="mt-6 text-xl text-black/60 font-medium">
-                                Builds consistency through structured planning, accountability, and daily check-ins, all designed around your environment.
-                            </p>
-                        </div>
-                        <div className="group rounded-[40px] bg-black p-12 text-white shadow-2xl">
-                            <h3 className="text-3xl font-black">Co-Training™</h3>
-                            <p className="mt-6 text-xl text-white/60 font-medium">
-                                Full immersion. I’m with you every session, every ride, every adjustment. You don’t need peak fitness to start. You need access to a gym, a road bike, and the discipline to follow through.
-                            </p>
+                    <div className="mt-32">
+                        <h2 className="text-[48px] font-black leading-tight md:text-[64px]">Two Ways to Build the Consistency You’ve Never Been Able to Keep.</h2>
+                        <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-2 items-center">
+                            <div className="space-y-8 text-2xl leading-relaxed text-black/80 font-medium">
+                                <p>
+                                    I remove the biggest blocker, <strong>consistency</strong>, by giving you a system that you follow every day, not vague advice you’re left to figure out alone.
+                                </p>
+                                <p>
+                                    <strong>Accountability Coaching</strong> builds consistency through structured planning, accountability, and daily check-ins, all designed around your environment.
+                                </p>
+                                <p>
+                                    <strong>Co-Training™</strong> is full immersion. I’m with you every session, every ride, every adjustment. You don’t need peak fitness to start. You need access to a gym, a road bike, and the discipline to follow through.
+                                </p>
+                            </div>
+                            <div className="relative h-[480px] overflow-hidden rounded-[40px] shadow-2xl">
+                                <Image
+                                    src="https://careyrouse.com/wp-content/uploads/2025/06/group-ride-1024x613.webp"
+                                    alt="Carey Rouse Group Training Ride"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -167,7 +380,7 @@ export default function FitnessCoachingPage() {
       ═══════════════════════════════════════════ */}
             <section className="bg-[#111] py-32 text-white">
                 <div className="mx-auto w-full max-w-[1440px] px-6 md:px-12 lg:px-24">
-                    <h2 className="text-center text-[48px] font-black md:text-[64px]">The Difference</h2>
+                    <h2 className="text-center text-[48px] font-black md:text-[64px]">Two Programs — One Goal: Build Relentless Consistency</h2>
 
                     <div className="mt-20 overflow-x-auto rounded-[40px] border border-white/10 bg-white/5 backdrop-blur-md">
                         <table className="w-full text-left min-w-[900px]">
@@ -189,6 +402,7 @@ export default function FitnessCoachingPage() {
                             </tbody>
                         </table>
                     </div>
+                    <p className="mt-8 text-center text-white/40 font-medium">* Assessment covered as part of your Accountability Coaching program.</p>
                 </div>
             </section>
 
@@ -198,20 +412,17 @@ export default function FitnessCoachingPage() {
             <section className="bg-white py-32" id="how_it_works">
                 <div className="mx-auto w-full max-w-[1440px] px-6 md:px-12 lg:px-24">
                     <h2 className="text-[48px] font-black md:text-[64px]">How The Assessment Works</h2>
-                    <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-2">
-                        <div className="space-y-8 text-2xl font-medium text-black/80">
-                            <p>Every application goes through manual review. If accepted, you’ll receive a link to schedule your mandatory free 60-minute assessment.</p>
-                            <p>During the assessment, we’ll cover goals, background, equipment access, and readiness. If approved, you begin Accountability Coaching immediately.</p>
-                            <p className="font-black text-black italic underline decoration-[#5E17EB] decoration-4 underline-offset-8">Strong fit + Austin residency may lead to a Co-Training™ invitation later.</p>
-                        </div>
-                        <div className="relative h-[400px] overflow-hidden rounded-[40px] shadow-2xl">
-                            <Image
-                                src="https://careyrouse.com/wp-content/uploads/2025/06/group-ride-1024x613.webp"
-                                alt="Carey Rouse Training Assessment"
-                                fill
-                                className="object-cover"
-                            />
-                        </div>
+                    <div className="mt-16 max-w-4xl space-y-8 text-2xl font-medium text-black/80">
+                        <p>Every application goes through manual review. If accepted, you’ll receive a link to schedule your mandatory free 60-minute assessment.</p>
+                        <ul className="list-disc pl-6 space-y-4">
+                            <li><strong>Applicants:</strong> complete your assessment over Google Meet.</li>
+                            <li>During the assessment, we’ll cover goals, background, equipment access, and readiness. If approved, you begin <strong>Accountability Coaching</strong> immediately. Strong fit + Austin may be invited to <strong>Co-Training™</strong> later.</li>
+                        </ul>
+                        <p className="pt-4">
+                            <Link href="#faq" className="text-xl font-bold text-[#5E17EB] hover:underline transition-all">
+                                Have questions? See the full FAQ
+                            </Link>
+                        </p>
                     </div>
                 </div>
             </section>
@@ -219,9 +430,9 @@ export default function FitnessCoachingPage() {
             {/* ═══════════════════════════════════════════
           SECTION 5 — FAQ
       ═══════════════════════════════════════════ */}
-            <section id="faq" className="mx-auto w-full max-w-[1440px] px-6 py-40 md:px-12 lg:px-24">
+            <section id="faq" className="mx-auto w-full max-w-[1440px] px-6 py-40 md:px-12 lg:px-24 bg-[#F9F9F9]/50">
                 <div className="max-w-4xl mx-auto">
-                    <h2 className="text-[48px] font-black md:text-[64px]">Fitness FAQ</h2>
+                    <h2 className="text-[48px] font-black md:text-[64px]">Coaching FAQ</h2>
                     <div className="mt-20 divide-y divide-black/10 border-y border-black/10">
                         {fitnessFaqs.map((item, i) => (
                             <details key={i} className="group py-10 transition-all hover:bg-[#F9F9F9] px-4 md:px-8">

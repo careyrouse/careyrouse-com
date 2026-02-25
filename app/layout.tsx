@@ -14,14 +14,14 @@ export const metadata: Metadata = {
 const navLinks = [
   { label: "About", href: "/about" },
   { label: "Life Coaching", href: "/life" },
-  { label: "Fitness Coaching", href: "https://careyrouse.com/fitness/" },
-  { label: "My Book", href: "https://careyrouse.com/book/" },
-  { label: "Contact", href: "https://careyrouse.com/contact/" },
+  { label: "Fitness Coaching", href: "/fitness" },
+  { label: "My Book", href: "/book" },
+  { label: "Contact", href: "/contact" },
 ];
 
 /* ─── FOOTER DATA ─── */
 const resourceLinks = [
-  { label: "My Book", href: "https://careyrouse.com/book/" },
+  { label: "My Book", href: "/book" },
   {
     label: "1001 Ways Discipline eBook",
     href: "https://careyrouse.com/1001-ways-discipline-ebook/",
@@ -35,8 +35,8 @@ const resourceLinks = [
 const workLinks = [
   { label: "About", href: "/about" },
   { label: "Life Coaching", href: "/life" },
-  { label: "Fitness Coaching", href: "https://careyrouse.com/fitness/" },
-  { label: "Contact", href: "https://careyrouse.com/contact/" },
+  { label: "Fitness Coaching", href: "/fitness" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const socialLinks = [
@@ -90,7 +90,7 @@ export default function RootLayout({
         <header className="sticky top-0 z-50 border-b border-black/10 bg-white">
           <div className="mx-auto flex max-w-[1280px] items-center justify-between px-4 py-3 md:px-6 lg:w-[90%]">
             {/* Logo */}
-            <Link href="https://careyrouse.com/" className="shrink-0">
+            <Link href="/" className="shrink-0">
               <Image
                 src="https://careyrouse.com/wp-content/uploads/2025/06/CR-black-on-trans.webp"
                 alt="Carey Rouse"
@@ -270,13 +270,13 @@ export default function RootLayout({
 
               <div className="flex items-center gap-4">
                 <Link
-                  href="https://careyrouse.com/terms-and-conditions/"
+                  href="/terms-and-conditions"
                   className="text-[14px] leading-[20px] text-black no-underline hover:text-[#5E17EB]"
                 >
                   Terms and Conditions
                 </Link>
                 <Link
-                  href="https://careyrouse.com/privacy-policy/"
+                  href="/privacy-policy"
                   className="text-[14px] leading-[20px] text-black no-underline hover:text-[#5E17EB]"
                 >
                   Privacy Policy
