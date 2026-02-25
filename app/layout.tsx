@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 /* ─── NAV LINKS ─── */
 const navLinks = [
   { label: "About", href: "/about" },
-  { label: "Life Coaching", href: "https://careyrouse.com/life/" },
+  { label: "Life Coaching", href: "/life" },
   { label: "Fitness Coaching", href: "https://careyrouse.com/fitness/" },
   { label: "My Book", href: "https://careyrouse.com/book/" },
   { label: "Contact", href: "https://careyrouse.com/contact/" },
@@ -34,7 +34,7 @@ const resourceLinks = [
 
 const workLinks = [
   { label: "About", href: "/about" },
-  { label: "Life Coaching", href: "https://careyrouse.com/life/" },
+  { label: "Life Coaching", href: "/life" },
   { label: "Fitness Coaching", href: "https://careyrouse.com/fitness/" },
   { label: "Contact", href: "https://careyrouse.com/contact/" },
 ];
