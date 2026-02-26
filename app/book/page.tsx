@@ -11,7 +11,7 @@ export default function BookPage() {
                 <div className="mx-auto w-full max-w-[1440px] px-6 md:px-12 lg:px-24">
                     <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
                         <div className="order-2 lg:order-1">
-                            <h1 className="text-[56px] font-extrabold leading-[1.05] tracking-tight md:text-[80px]">
+                            <h1 className="text-[56px] font-black leading-[1.05] tracking-tight md:text-[88px] lg:text-[100px]">
                                 Find Meaning <br />
                                 Through <br />
                                 Relentless <br />
@@ -25,7 +25,7 @@ export default function BookPage() {
                                     href="https://amzn.to/3HtU3ua"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="inline-block rounded-full bg-[#5E17EB] px-12 py-6 text-xl font-black text-white transition-all hover:scale-105 hover:bg-[#7236F2] active:scale-95 shadow-2xl"
+                                    className="inline-block rounded-full bg-[#0066FF] px-12 py-6 text-xl font-black text-white transition-all hover:scale-105 hover:bg-[#0052CC] active:scale-95 shadow-2xl"
                                 >
                                     Buy on Amazon
                                 </Link>
@@ -52,7 +52,7 @@ export default function BookPage() {
             <section className="bg-white py-32">
                 <div className="mx-auto w-full max-w-[1440px] px-6 md:px-12 lg:px-24">
                     <div className="max-w-4xl">
-                        <h2 className="text-[40px] font-black leading-tight md:text-[56px]">
+                        <h2 className="text-[40px] font-black leading-tight md:text-[56px] lg:text-[64px]">
                             Ready for the raw truth about building a life that actually means something?
                         </h2>
                         <div className="mt-12 space-y-8 text-2xl leading-relaxed text-black/80 font-medium">
@@ -75,7 +75,7 @@ export default function BookPage() {
       ═══════════════════════════════════════════ */}
             <section className="bg-[#F9F9F9] py-32">
                 <div className="mx-auto w-full max-w-[1440px] px-6 md:px-12 lg:px-24">
-                    <h2 className="text-[40px] font-black md:text-[56px]">Inside, You Will Learn How To:</h2>
+                    <h2 className="text-[40px] font-black md:text-[56px] lg:text-[64px]">Inside, You Will Learn How To:</h2>
                     <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                         {[
                             {
@@ -103,8 +103,8 @@ export default function BookPage() {
                                 text: "Develop the grit to face life’s inevitable hard hits, learn from setbacks, and keep getting back up, stronger and faster, every single time.",
                             },
                         ].map((item, i) => (
-                            <div key={i} className="rounded-[40px] bg-white p-10 shadow-sm border border-black/5 hover:border-[#5E17EB]/20 transition-all">
-                                <h3 className="text-2xl font-black text-[#5E17EB]">{item.title}</h3>
+                            <div key={i} className="rounded-[40px] bg-white p-10 shadow-sm border border-black/5 hover:border-[#0066FF]/20 transition-all">
+                                <h3 className="text-[24px] font-black md:text-[32px] lg:text-[40px] tracking-tight text-[#0066FF]">{item.title}</h3>
                                 <p className="mt-6 text-lg font-medium text-black/70 leading-relaxed">{item.text}</p>
                             </div>
                         ))}
@@ -136,7 +136,7 @@ export default function BookPage() {
                                     href="https://amzn.to/3HtU3ua"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="inline-block rounded-full bg-black px-12 py-6 text-xl font-black text-white transition-all hover:scale-105 hover:bg-[#5E17EB] active:scale-95 shadow-2xl"
+                                    className="inline-block rounded-full bg-black px-12 py-6 text-xl font-black text-white transition-all hover:scale-105 hover:bg-[#0066FF] active:scale-95 shadow-2xl"
                                 >
                                     Available on Amazon
                                 </Link>

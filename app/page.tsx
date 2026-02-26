@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main>
+    <main className="font-sans antialiased bg-white text-black">
       {/* ═══════════════════════════════════════════
           SECTION 1 — HERO
       ═══════════════════════════════════════════ */}
@@ -17,15 +17,15 @@ export default function Home() {
           priority
         />
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/52" />
+        <div className="absolute inset-0 bg-black/70" />
 
         {/* Hero content */}
         <div className="relative z-10 mx-auto flex w-full max-w-[1280px] flex-1 flex-col justify-start px-4 pt-20 pb-20 md:px-6">
           <div className="max-w-2xl">
-            <h1 className="text-[40px] font-bold leading-[48px] text-white md:text-[56px] md:leading-[68px]">
+            <h1 className="text-[56px] font-black leading-[1.05] tracking-tight md:text-[88px] lg:text-[100px] text-white">
               Design A Life You Actually Want To Live
             </h1>
-            <p className="mt-4 text-[24px] font-bold leading-[32px] text-white md:text-[32px] md:leading-[40px]">
+            <p className="mt-4 text-[24px] font-bold leading-tight tracking-tight text-white md:text-[32px] lg:text-[40px]">
               Life Coaching And Fitness Coaching Built On One Framework
             </p>
             <p className="mt-6 text-[18px] leading-[26px] text-white">
@@ -56,9 +56,9 @@ export default function Home() {
       {/* ═══════════════════════════════════════════
           SECTION 2 — CHANGE AS THE HUMAN ARC
       ═══════════════════════════════════════════ */}
-      <section className="bg-white px-4 pt-[60px] pb-[30px] md:px-6">
+      <section className="bg-white px-4 py-24 md:px-6 md:py-32">
         <div className="mx-auto max-w-[1280px]">
-          <h2 className="text-left text-[28px] font-bold leading-[44px] text-black md:text-[48px] md:leading-[56px]">
+          <h2 className="text-left text-[40px] font-black leading-tight tracking-tight md:text-[56px] lg:text-[64px] text-black">
             Change As The Human Arc
           </h2>
           <p className="mt-2 pb-[30px] text-left text-[20px] font-bold leading-[28px] text-black md:text-[24px] md:leading-[32px]">
@@ -83,9 +83,9 @@ export default function Home() {
       {/* ═══════════════════════════════════════════
           SECTION 3 — ONE FRAMEWORK – TWO ENTRY POINTS
       ═══════════════════════════════════════════ */}
-      <section className="bg-white px-4 pt-[60px] pb-[30px] md:px-6">
+      <section className="bg-white px-4 py-24 md:px-6 md:py-32">
         <div className="mx-auto max-w-[1280px]">
-          <h2 className="text-left text-[28px] font-bold leading-[44px] text-black md:text-[48px] md:leading-[56px]">
+          <h2 className="text-left text-[40px] font-black leading-tight tracking-tight md:text-[56px] lg:text-[64px] text-black">
             One Framework – Two Entry Points
           </h2>
           <p className="mt-2 pb-[30px] text-left text-[18px] leading-[26px] text-black md:text-[20px] md:leading-[28px]">
@@ -106,7 +106,7 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-0 md:grid-cols-2">
             {/* Life Coaching Card */}
             <div className="flex flex-col gap-4 p-0">
-              <h3 className="text-[32px] font-bold leading-[40px] text-black md:text-[40px] md:leading-[48px]">
+              <h3 className="text-[24px] font-black md:text-[32px] lg:text-[40px] leading-tight tracking-tight text-black">
                 Life Coaching:
               </h3>
               <p className="text-[18px] leading-[26px] text-black md:text-[20px] md:leading-[28px]">
@@ -127,7 +127,7 @@ export default function Home() {
 
             {/* Fitness Coaching Card */}
             <div className="flex flex-col gap-4 p-0 pt-8 md:pt-0">
-              <h3 className="text-[32px] font-bold leading-[40px] text-black md:text-[40px] md:leading-[48px]">
+              <h3 className="text-[24px] font-black md:text-[32px] lg:text-[40px] leading-tight tracking-tight text-black">
                 Fitness Coaching:
               </h3>
               <p className="text-[18px] leading-[26px] text-black md:text-[20px] md:leading-[28px]">
@@ -152,9 +152,9 @@ export default function Home() {
       {/* ═══════════════════════════════════════════
           SECTION 4 — SYSTEMS BEAT MOTIVATION
       ═══════════════════════════════════════════ */}
-      <section className="bg-white px-4 pt-[60px] pb-[30px] md:px-6">
+      <section className="bg-white px-4 py-24 md:px-6 md:py-32">
         <div className="mx-auto max-w-[1280px]">
-          <h2 className="text-left text-[28px] font-bold leading-[44px] text-black md:text-[48px] md:leading-[56px]">
+          <h2 className="text-left text-[40px] font-black leading-tight tracking-tight md:text-[56px] lg:text-[64px] text-black">
             Systems Beat Motivation
           </h2>
           <p className="mt-2 pb-[30px] text-left text-[18px] leading-[26px] text-black md:text-[20px] md:leading-[28px]">
@@ -169,7 +169,7 @@ export default function Home() {
       {/* ═══════════════════════════════════════════
           SECTION 5 — MEET CAREY ROUSE
       ═══════════════════════════════════════════ */}
-      <section className="bg-white px-4 pt-[60px] pb-[30px] md:px-6">
+      <section className="bg-white px-4 py-24 md:px-6 md:py-32">
         <div className="mx-auto max-w-[1280px]">
           <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
             {/* Headshot */}
@@ -185,7 +185,7 @@ export default function Home() {
 
             {/* Text */}
             <div className="flex flex-col self-center">
-              <h2 className="text-[28px] font-bold leading-[44px] text-black md:text-[48px] md:leading-[56px]">
+              <h2 className="text-left text-[40px] font-black leading-tight tracking-tight md:text-[56px] lg:text-[64px] text-black">
                 Meet Carey Rouse
               </h2>
               <p className="mt-4 text-[18px] leading-[26px] text-black md:text-[20px] md:leading-[28px]">
@@ -206,9 +206,9 @@ export default function Home() {
       {/* ═══════════════════════════════════════════
           SECTION 6 — START HERE (CTAs)
       ═══════════════════════════════════════════ */}
-      <section className="bg-white px-4 pt-[60px] pb-[60px] md:px-6">
+      <section className="bg-white px-4 py-24 md:px-6 md:py-32">
         <div className="mx-auto max-w-[1280px]">
-          <h2 className="mb-6 text-center text-[28px] font-bold leading-[44px] text-black md:text-[40px] md:leading-[48px]">
+          <h2 className="mb-12 text-center text-[40px] font-black leading-tight tracking-tight md:text-[56px] lg:text-[64px] text-black">
             Start Here
           </h2>
           <div className="grid grid-cols-1 items-center gap-4 sm:grid-cols-2 sm:justify-items-center">

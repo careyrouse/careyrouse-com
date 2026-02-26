@@ -301,7 +301,7 @@ export default function FitnessCoachingPage() {
 
                 <div className="relative z-10 mx-auto w-full max-w-[1440px] px-6 py-32 md:px-12 lg:px-24">
                     <div className="max-w-4xl text-left">
-                        <h1 className="text-[56px] font-extrabold leading-[1.05] tracking-tight md:text-[88px] lg:text-[100px]">
+                        <h1 className="text-[56px] font-black leading-[1.05] tracking-tight md:text-[88px] lg:text-[100px]">
                             Consistency Isn’t <br className="hidden md:block" />
                             a Personality Trait.<br className="hidden md:block" />
                             It’s a System.
@@ -310,7 +310,7 @@ export default function FitnessCoachingPage() {
                         <div className="mt-16 flex flex-col gap-6 sm:flex-row sm:items-center">
                             <Link
                                 href="#application"
-                                className="rounded-full bg-[#5E17EB] px-12 py-6 text-center text-xl font-black text-white transition-all hover:scale-105 hover:bg-[#7236F2] active:scale-95 shadow-2xl"
+                                className="rounded-full bg-[#0066FF] px-12 py-6 text-center text-xl font-black text-white transition-all hover:scale-105 hover:bg-[#0052CC] active:scale-95 shadow-2xl"
                             >
                                 Apply For Assessment
                             </Link>
@@ -325,23 +325,23 @@ export default function FitnessCoachingPage() {
             <section className="bg-white py-32">
                 <div className="mx-auto w-full max-w-[1440px] px-6 md:px-12 lg:px-24">
                     <div className="max-w-4xl">
-                        <h2 className="text-[48px] font-black leading-tight md:text-[64px]">Two ways to work with me</h2>
+                        <h2 className="text-[40px] font-black leading-tight md:text-[56px] lg:text-[64px]">Two ways to work with me</h2>
                         <div className="mt-12 space-y-8 text-2xl leading-relaxed text-black/80 font-medium">
                             <p>
                                 <strong>Accountability Coaching:</strong> Remote, high-accountability coaching. <br />
                                 <strong>Co-Training™:</strong> Full-immersion, in-person transformation.
                             </p>
                             <p>
-                                If you’ve read <Link href="https://amzn.to/3HtU3ua" className="underline font-black decoration-[#5E17EB] decoration-4 italic">Find Meaning Through Relentless Discipline</Link>, you already know what this is about. This isn’t another coaching program. It’s a full commitment to discipline — physically, mentally, and operationally.
+                                If you’ve read <Link href="https://amzn.to/3HtU3ua" className="underline font-black decoration-[#0066FF] decoration-4 italic">Find Meaning Through Relentless Discipline</Link>, you already know what this is about. This isn’t another coaching program. It’s a full commitment to discipline — physically, mentally, and operationally.
                             </p>
                             <p>
                                 Every person starts with a one-hour assessment. That’s where we decide if you’re ready to begin <strong>Accountability Coaching</strong> — or, eventually, earn your way into <strong>Co-Training™</strong>.
                             </p>
                             <div className="pt-4 flex flex-col gap-4">
-                                <Link href="#how_it_works" className="text-xl font-bold text-[#5E17EB] hover:underline transition-all">
+                                <Link href="#how_it_works" className="text-xl font-bold text-[#0066FF] hover:underline transition-all">
                                     How it works ↓
                                 </Link>
-                                <Link href="#faq" className="text-xl font-bold text-[#5E17EB] hover:underline transition-all">
+                                <Link href="#faq" className="text-xl font-bold text-[#0066FF] hover:underline transition-all">
                                     Have questions? See the full FAQ ↓
                                 </Link>
                             </div>
@@ -349,7 +349,7 @@ export default function FitnessCoachingPage() {
                     </div>
 
                     <div className="mt-32">
-                        <h2 className="text-[48px] font-black leading-tight md:text-[64px]">Two Ways to Build the Consistency You’ve Never Been Able to Keep.</h2>
+                        <h2 className="text-[40px] font-black leading-tight md:text-[56px] lg:text-[64px]">Two Ways to Build the Consistency You’ve Never Been Able to Keep.</h2>
                         <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-2 items-center">
                             <div className="space-y-8 text-2xl leading-relaxed text-black/80 font-medium">
                                 <p>
@@ -380,14 +380,14 @@ export default function FitnessCoachingPage() {
       ═══════════════════════════════════════════ */}
             <section className="bg-[#111] py-32 text-white">
                 <div className="mx-auto w-full max-w-[1440px] px-6 md:px-12 lg:px-24">
-                    <h2 className="text-center text-[48px] font-black md:text-[64px]">Two Programs — One Goal: Build Relentless Consistency</h2>
+                    <h2 className="text-center text-[40px] font-black md:text-[56px] lg:text-[64px]">Two Programs — One Goal: Build Relentless Consistency</h2>
 
                     <div className="mt-20 overflow-x-auto rounded-[40px] border border-white/10 bg-white/5 backdrop-blur-md">
                         <table className="w-full text-left min-w-[900px]">
                             <thead>
                                 <tr className="border-b border-white/10">
                                     <th className="px-10 py-8 text-xl font-black uppercase tracking-widest text-white/40">Feature</th>
-                                    <th className="px-10 py-8 text-xl font-black uppercase tracking-widest text-[#5E17EB]">Accountability Coaching</th>
+                                    <th className="px-10 py-8 text-xl font-black uppercase tracking-widest text-[#0066FF]">Accountability Coaching</th>
                                     <th className="px-10 py-8 text-xl font-black uppercase tracking-widest text-white">Co-Training™</th>
                                 </tr>
                             </thead>
@@ -411,7 +411,7 @@ export default function FitnessCoachingPage() {
       ═══════════════════════════════════════════ */}
             <section className="bg-white py-32" id="how_it_works">
                 <div className="mx-auto w-full max-w-[1440px] px-6 md:px-12 lg:px-24">
-                    <h2 className="text-[48px] font-black md:text-[64px]">How The Assessment Works</h2>
+                    <h2 className="text-[40px] font-black md:text-[56px] lg:text-[64px]">How The Assessment Works</h2>
                     <div className="mt-16 max-w-4xl space-y-8 text-2xl font-medium text-black/80">
                         <p>Every application goes through manual review. If accepted, you’ll receive a link to schedule your mandatory free 60-minute assessment.</p>
                         <ul className="list-disc pl-6 space-y-4">
@@ -419,7 +419,7 @@ export default function FitnessCoachingPage() {
                             <li>During the assessment, we’ll cover goals, background, equipment access, and readiness. If approved, you begin <strong>Accountability Coaching</strong> immediately. Strong fit + Austin may be invited to <strong>Co-Training™</strong> later.</li>
                         </ul>
                         <p className="pt-4">
-                            <Link href="#faq" className="text-xl font-bold text-[#5E17EB] hover:underline transition-all">
+                            <Link href="#faq" className="text-xl font-bold text-[#0066FF] hover:underline transition-all">
                                 Have questions? See the full FAQ
                             </Link>
                         </p>
@@ -432,7 +432,7 @@ export default function FitnessCoachingPage() {
       ═══════════════════════════════════════════ */}
             <section id="faq" className="mx-auto w-full max-w-[1440px] px-6 py-40 md:px-12 lg:px-24 bg-[#F9F9F9]/50">
                 <div className="max-w-4xl mx-auto">
-                    <h2 className="text-[48px] font-black md:text-[64px]">Coaching FAQ</h2>
+                    <h2 className="text-[40px] font-black md:text-[56px] lg:text-[64px]">Coaching FAQ</h2>
                     <div className="mt-20 divide-y divide-black/10 border-y border-black/10">
                         {fitnessFaqs.map((item, i) => (
                             <details key={i} className="group py-10 transition-all hover:bg-[#F9F9F9] px-4 md:px-8">
@@ -454,7 +454,7 @@ export default function FitnessCoachingPage() {
       ═══════════════════════════════════════════ */}
             <section id="application" className="bg-black py-40 text-white relative overflow-hidden">
                 <div className="mx-auto w-full max-w-[1000px] px-6 text-left relative z-10">
-                    <span className="text-[#5E17EB] font-black uppercase tracking-widest text-xl">Get Started</span>
+                    <span className="text-[#0066FF] font-black uppercase tracking-widest text-xl">Get Started</span>
                     <h2 className="mt-8 text-[56px] font-black leading-[0.95] md:text-[88px]">Start With an Assessment</h2>
                     <p className="mt-12 text-2xl font-bold opacity-60 md:text-3xl max-w-2xl">
                         Complete this brief application so I can review your fit. If accepted, you’ll get a link to book a free 60-minute assessment.
@@ -464,18 +464,18 @@ export default function FitnessCoachingPage() {
                         <form className="grid grid-cols-1 gap-8 md:grid-cols-2">
                             <div className="space-y-4">
                                 <label className="block text-xl font-bold opacity-60">Full Name</label>
-                                <input type="text" className="w-full bg-white/5 border border-white/20 rounded-2xl px-6 py-4 text-white font-bold focus:border-[#5E17EB] outline-none transition-colors" />
+                                <input type="text" className="w-full bg-white/5 border border-white/20 rounded-2xl px-6 py-4 text-white font-bold focus:border-[#0066FF] outline-none transition-colors" />
                             </div>
                             <div className="space-y-4">
                                 <label className="block text-xl font-bold opacity-60">Email Address</label>
-                                <input type="email" className="w-full bg-white/5 border border-white/20 rounded-2xl px-6 py-4 text-white font-bold focus:border-[#5E17EB] outline-none transition-colors" />
+                                <input type="email" className="w-full bg-white/5 border border-white/20 rounded-2xl px-6 py-4 text-white font-bold focus:border-[#0066FF] outline-none transition-colors" />
                             </div>
                             <div className="space-y-4 md:col-span-2">
                                 <label className="block text-xl font-bold opacity-60">Primary Goal (Health, Performance, Reset)</label>
-                                <textarea className="w-full bg-white/5 border border-white/20 rounded-2xl px-6 py-4 text-white font-bold focus:border-[#5E17EB] outline-none transition-colors h-40" />
+                                <textarea className="w-full bg-white/5 border border-white/20 rounded-2xl px-6 py-4 text-white font-bold focus:border-[#0066FF] outline-none transition-colors h-40" />
                             </div>
                             <div className="md:col-span-2">
-                                <button className="w-full rounded-2xl bg-[#5E17EB] py-6 text-2xl font-black text-white hover:bg-[#7236F2] transition-transform hover:scale-[1.02] active:scale-95 shadow-2xl">
+                                <button className="w-full rounded-2xl bg-[#0066FF] py-6 text-2xl font-black text-white hover:bg-[#0052CC] transition-transform hover:scale-[1.02] active:scale-95 shadow-2xl">
                                     Submit Application →
                                 </button>
                                 <p className="mt-6 text-center text-white/40 font-bold">

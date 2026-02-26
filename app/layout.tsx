@@ -107,7 +107,7 @@ export default function RootLayout({
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="px-[18px] py-[13px] text-[16px] leading-[24px] text-black no-underline transition-colors hover:text-[#5E17EB]"
+                  className="px-[18px] py-[13px] text-[16px] leading-[24px] text-black no-underline transition-colors hover:text-[#0066FF]"
                 >
                   {link.label}
                 </Link>
@@ -166,16 +166,16 @@ export default function RootLayout({
             {/* 3-column grid */}
             <div className="grid grid-cols-1 gap-8 pt-4 sm:grid-cols-2 lg:grid-cols-[30%_30%_30%] lg:justify-center">
               {/* Resources */}
-              <div className="flex flex-col gap-5 pl-2">
+              <div className="flex flex-col gap-2 pl-2">
                 <h5 className="text-[24px] font-bold leading-[32px] text-black">
                   Resources
                 </h5>
-                <ul className="flex flex-col gap-0">
+                <ul className="flex flex-col gap-0 pl-4">
                   {resourceLinks.map((link) => (
                     <li key={link.href}>
                       <Link
                         href={link.href}
-                        className="block py-[13px] text-[14px] leading-[20px] text-black no-underline hover:text-[#5E17EB]"
+                        className="block py-2 text-[14px] leading-[20px] text-black no-underline hover:text-[#0066FF]"
                       >
                         {link.label}
                       </Link>
@@ -185,16 +185,16 @@ export default function RootLayout({
               </div>
 
               {/* Work With Me */}
-              <div className="flex flex-col gap-5">
+              <div className="flex flex-col gap-2">
                 <h5 className="text-[24px] font-bold leading-[32px] text-black">
                   Work With Me
                 </h5>
-                <ul className="flex flex-col gap-0">
+                <ul className="flex flex-col gap-0 pl-4">
                   {workLinks.map((link) => (
                     <li key={link.href}>
                       <Link
                         href={link.href}
-                        className="block py-[13px] text-[14px] leading-[20px] text-black no-underline hover:text-[#5E17EB]"
+                        className="block py-2 text-[14px] leading-[20px] text-black no-underline hover:text-[#0066FF]"
                       >
                         {link.label}
                       </Link>
@@ -232,7 +232,7 @@ export default function RootLayout({
                   >
                     <div className="formkit-field">
                       <input
-                        className="formkit-input w-full rounded border border-black/20 bg-white px-4 py-3 text-sm text-black shadow-sm outline-none focus:border-[#5E17EB] focus:ring-1 focus:ring-[#5E17EB]"
+                        className="formkit-input w-full rounded border border-black/20 bg-white px-4 py-3 text-sm text-black shadow-sm outline-none focus:border-[#0066FF] focus:ring-1 focus:ring-[#0066FF]"
                         type="text"
                         name="fields[first_name]"
                         placeholder="First Name"
@@ -242,7 +242,7 @@ export default function RootLayout({
                     </div>
                     <div className="formkit-field">
                       <input
-                        className="formkit-input w-full rounded border border-black/20 bg-white px-4 py-3 text-sm text-black shadow-sm outline-none focus:border-[#5E17EB] focus:ring-1 focus:ring-[#5E17EB]"
+                        className="formkit-input w-full rounded border border-black/20 bg-white px-4 py-3 text-sm text-black shadow-sm outline-none focus:border-[#0066FF] focus:ring-1 focus:ring-[#0066FF]"
                         type="email"
                         name="email_address"
                         placeholder="Enter Your Email"
@@ -251,7 +251,7 @@ export default function RootLayout({
                       />
                     </div>
                     <button
-                      className="formkit-submit cursor-pointer rounded bg-[#5E17EB] px-6 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#5E17EBCC]"
+                      className="formkit-submit cursor-pointer rounded bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-black/80 active:scale-95"
                       data-element="submit"
                       type="submit"
                     >
@@ -271,13 +271,13 @@ export default function RootLayout({
               <div className="flex items-center gap-4">
                 <Link
                   href="/terms-and-conditions"
-                  className="text-[14px] leading-[20px] text-black no-underline hover:text-[#5E17EB]"
+                  className="text-[14px] leading-[20px] text-black no-underline hover:text-[#0066FF]"
                 >
                   Terms and Conditions
                 </Link>
                 <Link
                   href="/privacy-policy"
-                  className="text-[14px] leading-[20px] text-black no-underline hover:text-[#5E17EB]"
+                  className="text-[14px] leading-[20px] text-black no-underline hover:text-[#0066FF]"
                 >
                   Privacy Policy
                 </Link>
@@ -291,7 +291,7 @@ export default function RootLayout({
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={social.label}
-                    className="text-black transition-colors hover:text-[#5E17EB]"
+                    className="text-black transition-colors hover:text-[#0066FF]"
                   >
                     {social.icon}
                   </Link>

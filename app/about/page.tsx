@@ -87,11 +87,11 @@ export default function AboutPage() {
                     priority
                 />
                 {/* Dark overlay */}
-                <div className="absolute inset-0 bg-black/52" />
+                <div className="absolute inset-0 bg-black/70" />
 
                 {/* Hero content */}
                 <div className="relative z-10 mx-auto flex w-full max-w-[1280px] flex-col items-start justify-center px-4 md:px-6">
-                    <h1 className="text-[40px] font-bold leading-[48px] text-white md:text-[56px] md:leading-[68px]">
+                    <h1 className="text-[56px] font-black leading-[1.05] tracking-tight md:text-[88px] lg:text-[100px] text-white">
                         ABOUT CAREY ROUSE
                     </h1>
                     <p className="mt-4 text-[20px] font-bold leading-[28px] text-white md:text-[24px] md:leading-[32px]">
@@ -103,9 +103,9 @@ export default function AboutPage() {
             {/* ═══════════════════════════════════════════
           SECTION 2 — THE JOURNEY: FORGED BY DISCIPLINE
       ═══════════════════════════════════════════ */}
-            <section className="bg-white px-4 pt-[60px] pb-[30px] md:px-6">
+            <section className="bg-white px-4 py-24 md:px-6 md:py-32">
                 <div className="mx-auto max-w-[1280px]">
-                    <h2 className="text-left text-[28px] font-bold leading-[44px] text-black md:text-[48px] md:leading-[56px]">
+                    <h2 className="text-left text-[40px] font-black leading-tight md:text-[56px] lg:text-[64px] text-black">
                         The Journey: Forged by Discipline
                     </h2>
                     <p className="mt-2 pb-[30px] text-left text-[18px] leading-[26px] text-black md:text-[20px] md:leading-[28px]">
@@ -151,9 +151,9 @@ export default function AboutPage() {
             {/* ═══════════════════════════════════════════
           SECTION 3 — STRUCTURED ACCOUNTABILITY. REAL CHANGE.
       ═══════════════════════════════════════════ */}
-            <section className="bg-white px-4 pt-[60px] pb-[30px] md:px-6">
+            <section className="bg-white px-4 py-24 md:px-6 md:py-32">
                 <div className="mx-auto max-w-[1280px]">
-                    <h2 className="text-left text-[28px] font-bold leading-[44px] text-black md:text-[48px] md:leading-[56px]">
+                    <h2 className="text-left text-[40px] font-black leading-tight md:text-[56px] lg:text-[64px] text-black">
                         Structured Accountability. Real Change.
                     </h2>
                     <p className="mt-2 pb-[30px] text-left text-[18px] leading-[26px] text-black md:text-[20px] md:leading-[28px]">
@@ -166,7 +166,7 @@ export default function AboutPage() {
                     <div className="grid grid-cols-1 gap-0 md:grid-cols-2">
                         {/* Life Coaching Card */}
                         <div className="flex flex-col gap-4 p-0">
-                            <h3 className="text-[32px] font-bold leading-[40px] text-black md:text-[40px] md:leading-[48px]">
+                            <h3 className="text-[24px] font-black md:text-[32px] lg:text-[40px] leading-tight tracking-tight text-black">
                                 Life Coaching:
                             </h3>
                             <p className="text-[18px] leading-[26px] text-black md:text-[20px] md:leading-[28px]">
@@ -187,7 +187,7 @@ export default function AboutPage() {
 
                         {/* Fitness Coaching Card */}
                         <div className="flex flex-col gap-4 p-0 pt-8 md:pt-0">
-                            <h3 className="text-[32px] font-bold leading-[40px] text-black md:text-[40px] md:leading-[48px]">
+                            <h3 className="text-[24px] font-black md:text-[32px] lg:text-[40px] leading-tight tracking-tight text-black">
                                 Fitness Coaching:
                             </h3>
                             <p className="text-[18px] leading-[26px] text-black md:text-[20px] md:leading-[28px]">
@@ -231,9 +231,9 @@ export default function AboutPage() {
             {/* ═══════════════════════════════════════════
           SECTION 5 — YOUR POWER TO BUILD
       ═══════════════════════════════════════════ */}
-            <section className="bg-white px-4 pt-[60px] pb-[60px] md:px-6">
+            <section className="bg-white px-4 py-24 md:px-6 md:py-32">
                 <div className="mx-auto max-w-[1280px]">
-                    <h2 className="text-left text-[28px] font-bold leading-[44px] text-black md:text-[48px] md:leading-[56px]">
+                    <h2 className="text-left text-[40px] font-black leading-tight md:text-[56px] lg:text-[64px] text-black">
                         Your Power to Build
                     </h2>
                     <p className="mt-2 text-left text-[18px] leading-[26px] text-black md:text-[20px] md:leading-[28px]">

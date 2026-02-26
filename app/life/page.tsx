@@ -113,7 +113,7 @@ export default function LifeCoachingPage() {
                 <div className="relative z-10 mx-auto w-full max-w-[1440px] px-6 py-32 md:px-12 lg:px-24">
                     <div className="max-w-4xl text-left">
                         {/* Huge Heading */}
-                        <h1 className="text-[56px] font-extrabold leading-[1.05] tracking-tight md:text-[88px] lg:text-[110px]">
+                        <h1 className="text-[56px] font-black leading-[1.05] tracking-tight md:text-[88px] lg:text-[100px]">
                             Stop Living <br className="hidden md:block" />
                             Someone Else’s <br className="hidden md:block" />
                             Script
@@ -165,7 +165,7 @@ export default function LifeCoachingPage() {
                 <div className="mx-auto w-full max-w-[1440px] px-6 md:px-12 lg:px-24">
                     <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
                         <div>
-                            <h2 className="text-[48px] font-black leading-tight md:text-[64px]">How We <br />Work Together</h2>
+                            <h2 className="text-[40px] font-black leading-tight md:text-[56px] lg:text-[64px]">How We <br />Work Together</h2>
                         </div>
                         <div className="space-y-8 text-2xl leading-relaxed text-black/80">
                             <p className="font-bold text-black">Life coaching is built around the Achieve Anything Framework.</p>
@@ -185,14 +185,14 @@ export default function LifeCoachingPage() {
       ═══════════════════════════════════════════ */}
             <section className="bg-[#111] py-32 text-white">
                 <div className="mx-auto w-full max-w-[1440px] px-6 md:px-12 lg:px-24">
-                    <h2 className="text-center text-[48px] font-black md:text-[64px]">What You Get</h2>
+                    <h2 className="text-center text-[40px] font-black md:text-[56px] lg:text-[64px]">What You Get</h2>
 
                     <div className="mt-20 overflow-x-auto rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md">
                         <table className="w-full text-left min-w-[800px]">
                             <thead>
                                 <tr className="border-b border-white/10">
                                     <th className="px-10 py-8 text-2xl font-black uppercase tracking-widest text-white/40">Feature</th>
-                                    <th className="px-10 py-8 text-2xl font-black uppercase tracking-widest text-[#5E17EB]">Achieve Anything Framework</th>
+                                    <th className="px-10 py-8 text-2xl font-black uppercase tracking-widest text-[#0066FF]">Achieve Anything Framework</th>
                                 </tr>
                             </thead>
                             <tbody className="divide-y divide-white/5">
@@ -223,7 +223,7 @@ export default function LifeCoachingPage() {
                                         <div className="mt-4 p-4 rounded-xl bg-red-600/10 border border-red-600/20 text-red-500 font-bold uppercase text-sm tracking-widest">
                                             The app is always free to use on your own at any time.
                                         </div>
-                                        <Link href="https://aaframework.replit.app/login" target="_blank" className="mt-4 inline-block text-[#8B5CF6] font-bold underline hover:text-[#A78BFA] transition-colors">
+                                        <Link href="https://aaframework.replit.app/login" target="_blank" className="mt-4 inline-block text-[#0066FF] font-bold underline hover:text-[#3385FF] transition-colors">
                                             Launch App →
                                         </Link>
                                     </td>
@@ -246,14 +246,14 @@ export default function LifeCoachingPage() {
       ═══════════════════════════════════════════ */}
             <section className="bg-white py-32">
                 <div className="mx-auto w-full max-w-[1440px] px-6 md:px-12 lg:px-24">
-                    <h2 className="text-center text-[48px] font-black md:text-[64px]">Results</h2>
+                    <h2 className="text-center text-[40px] font-black md:text-[56px] lg:text-[64px]">Results</h2>
                     <div className="mt-20 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
                         {testimonials.map((t, i) => (
                             <div key={i} className="group relative flex flex-col justify-between rounded-[40px] bg-[#F9F9F9] p-12 transition-all hover:bg-black hover:text-white border border-black/5 hover:border-black/0 hover:-translate-y-2 duration-500">
                                 <p className="text-2xl leading-relaxed italic opacity-80 group-hover:opacity-100 font-medium">"{t.text}"</p>
                                 <div className="mt-12">
                                     <div className="h-px bg-black/10 group-hover:bg-white/10 mb-8" />
-                                    <p className="text-xl font-black uppercase tracking-widest text-[#5E17EB] group-hover:text-white">— {t.name}</p>
+                                    <p className="text-xl font-black uppercase tracking-widest text-[#0066FF] group-hover:text-white">— {t.name}</p>
                                 </div>
                             </div>
                         ))}
@@ -264,12 +264,12 @@ export default function LifeCoachingPage() {
             {/* ═══════════════════════════════════════════
           SECTION 5 — PROMO OFFER
       ═══════════════════════════════════════════ */}
-            <section className="bg-[#5E17EB] py-24 text-white overflow-hidden">
+            <section className="bg-[#0066FF] py-24 text-white overflow-hidden">
                 <div className="mx-auto w-full max-w-[1440px] px-6 md:px-12 lg:px-24">
                     <div className="flex flex-col items-center justify-between gap-12 md:flex-row">
                         <div className="max-w-2xl">
                             <span className="inline-block rounded-full bg-white/20 px-4 py-1 text-sm font-black uppercase tracking-widest">Limited Monthly Offer</span>
-                            <h2 className="mt-6 text-[40px] font-black leading-tight md:text-[56px]">The first 10 clients get their first month FREE</h2>
+                            <h2 className="mt-6 text-[40px] font-black leading-tight md:text-[56px] lg:text-[64px]">The first 10 clients get their first month FREE</h2>
                             <p className="mt-4 text-xl font-medium text-white/70">Applies to new sign-ups this month. Book your call to secure your spot.</p>
                         </div>
                         <div className="flex flex-col items-center gap-4 text-center">
@@ -278,7 +278,7 @@ export default function LifeCoachingPage() {
                             <Link
                                 href="https://calendar.app.google/fSTvE2DQeuG24fGh8"
                                 target="_blank"
-                                className="mt-6 rounded-full bg-white px-10 py-5 text-xl font-black text-[#5E17EB] transition-transform hover:scale-110 active:scale-95 shadow-2xl"
+                                className="mt-6 rounded-full bg-white px-10 py-5 text-xl font-black text-[#0066FF] transition-transform hover:scale-110 active:scale-95 shadow-2xl"
                             >
                                 Claim It →
                             </Link>
@@ -292,7 +292,7 @@ export default function LifeCoachingPage() {
       ═══════════════════════════════════════════ */}
             <section id="faq" className="mx-auto w-full max-w-[1440px] px-6 py-40 md:px-12 lg:px-24">
                 <div className="max-w-4xl mx-auto">
-                    <h2 className="text-[48px] font-black md:text-[64px]">Common Questions</h2>
+                    <h2 className="text-[40px] font-black md:text-[56px] lg:text-[64px]">Common Questions</h2>
                     <div className="mt-20 divide-y divide-black/10 border-y border-black/10">
                         {faqItems.map((item, i) => (
                             <details key={i} className="group py-10 transition-all hover:bg-[#F9F9F9] px-4 md:px-8">
@@ -346,14 +346,14 @@ export default function LifeCoachingPage() {
                             className="mx-auto max-w-3xl rounded-[32px] bg-[#F6F6F6] p-4 shadow-2xl shadow-black/5 flex flex-col sm:flex-row gap-4 border border-black/5"
                         >
                             <input
-                                className="flex-1 rounded-2xl bg-white px-8 py-5 text-lg font-bold text-black border-transparent focus:border-[#5E17EB]/30 transition-all outline-none"
+                                className="flex-1 rounded-2xl bg-white px-8 py-5 text-lg font-bold text-black border-transparent focus:border-[#0066FF]/30 transition-all outline-none"
                                 type="text"
                                 name="fields[first_name]"
                                 placeholder="First Name"
                                 required
                             />
                             <input
-                                className="flex-1 rounded-2xl bg-white px-8 py-5 text-lg font-bold text-black border-transparent focus:border-[#5E17EB]/30 transition-all outline-none"
+                                className="flex-1 rounded-2xl bg-white px-8 py-5 text-lg font-bold text-black border-transparent focus:border-[#0066FF]/30 transition-all outline-none"
                                 type="email"
                                 name="email_address"
                                 placeholder="Your Email"
