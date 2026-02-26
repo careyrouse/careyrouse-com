@@ -77,7 +77,7 @@ export default function AboutPage() {
             {/* ═══════════════════════════════════════════
           SECTION 1 — HERO
       ═══════════════════════════════════════════ */}
-            <section className="relative flex min-h-screen flex-col items-center justify-center">
+            <section className="relative flex min-h-[70vh] flex-col items-center justify-center">
                 {/* Background image */}
                 <Image
                     src="/images/cable pulls.webp"
@@ -87,7 +87,7 @@ export default function AboutPage() {
                     priority
                 />
                 {/* Dark overlay */}
-                <div className="absolute inset-0 bg-black/40 md:bg-black/70" />
+                <div className="absolute inset-0 bg-black/20 md:bg-black/40" />
 
                 {/* Hero content */}
                 <div className="relative z-10 mx-auto flex w-full max-w-[1280px] flex-col items-start justify-center px-4 md:px-6">
@@ -103,7 +103,7 @@ export default function AboutPage() {
             {/* ═══════════════════════════════════════════
           SECTION 2 — THE JOURNEY: FORGED BY DISCIPLINE
       ═══════════════════════════════════════════ */}
-            <section className="bg-white px-4 py-24 md:px-6 md:py-32">
+            <section className="bg-white px-4 py-16 md:px-6 md:py-20">
                 <div className="mx-auto max-w-[1280px]">
                     <h2 className="text-left text-[32px] font-black leading-tight md:text-[56px] lg:text-[64px] text-black">
                         The Journey: Forged by Discipline
@@ -151,7 +151,7 @@ export default function AboutPage() {
             {/* ═══════════════════════════════════════════
           SECTION 3 — STRUCTURED ACCOUNTABILITY. REAL CHANGE.
       ═══════════════════════════════════════════ */}
-            <section className="bg-white px-4 py-24 md:px-6 md:py-32">
+            <section className="bg-white px-4 py-16 md:px-6 md:py-20">
                 <div className="mx-auto max-w-[1280px]">
                     <h2 className="text-left text-[32px] font-black leading-tight md:text-[56px] lg:text-[64px] text-black">
                         Structured Accountability. Real Change.
@@ -163,13 +163,13 @@ export default function AboutPage() {
                     </p>
 
                     {/* Two cards side by side */}
-                    <div className="grid grid-cols-1 gap-0 md:grid-cols-2">
+                    <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-24">
                         {/* Life Coaching Card */}
                         <div className="flex flex-col gap-4 p-0">
                             <h3 className="text-[24px] font-black md:text-[32px] lg:text-[40px] leading-tight tracking-tight text-black">
                                 Life Coaching:
                             </h3>
-                            <p className="text-[18px] leading-[26px] text-black md:text-[20px] md:leading-[28px]">
+                            <p className="text-[18px] leading-[26px] text-black md:text-[20px] md:leading-[28px] max-w-md">
                                 For those living by someone else&rsquo;s script who sense there
                                 is &ldquo;more&rdquo; but lack a process to act on it.
                             </p>
@@ -190,16 +190,16 @@ export default function AboutPage() {
                             <h3 className="text-[24px] font-black md:text-[32px] lg:text-[40px] leading-tight tracking-tight text-black">
                                 Fitness Coaching:
                             </h3>
-                            <p className="text-[18px] leading-[26px] text-black md:text-[20px] md:leading-[28px]">
+                            <p className="text-[18px] leading-[26px] text-black md:text-[20px] md:leading-[28px] max-w-md">
                                 For athletically minded adults who are out of shape and sick of
                                 starting over.
                             </p>
                             <div>
                                 <Link
-                                    href="https://careyrouse.com/fitness"
+                                    href="/fitness#application"
                                     className="inline-flex items-center justify-center rounded-full bg-black px-8 py-4 text-[16px] font-black leading-[24px] text-white no-underline shadow-xl transition-all hover:bg-black/80 hover:scale-[1.02] active:scale-95"
                                 >
-                                    Apply For Assessment
+                                    Apply Now
                                 </Link>
                             </div>
                         </div>
@@ -231,7 +231,7 @@ export default function AboutPage() {
             {/* ═══════════════════════════════════════════
           SECTION 5 — YOUR POWER TO BUILD
       ═══════════════════════════════════════════ */}
-            <section className="bg-white px-4 py-24 md:px-6 md:py-32">
+            <section className="bg-white px-4 py-16 md:px-6 md:py-20">
                 <div className="mx-auto max-w-[1280px]">
                     <h2 className="text-left text-[32px] font-black leading-tight md:text-[56px] lg:text-[64px] text-black">
                         Your Power to Build

@@ -336,10 +336,10 @@ export default function LifeCoachingPage() {
       ═══════════════════════════════════════════ */}
             <section className="bg-white py-32 border-t border-black/5">
                 <div className="mx-auto w-full max-w-[800px] px-6 text-center">
-                    <h2 className="text-[32px] font-black tracking-tight">Stay Updated</h2>
-                    <p className="mt-6 text-xl font-bold text-black/40">Subscribe for the latest insights and inspiration.</p>
+                    <h2 className="text-[32px] font-black tracking-tight">Subscribe</h2>
+                    <p className="mt-4 text-xl font-bold text-black/40">For the latest insights and inspiration.</p>
 
-                    <div className="mt-16">
+                    <div className="mt-8">
                         <form
                             action="https://app.kit.com/forms/8257969/subscriptions"
                             method="post"

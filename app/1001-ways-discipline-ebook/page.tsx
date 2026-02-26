@@ -78,7 +78,7 @@ export default function EbookPage() {
                     <h2 className="text-[40px] font-black leading-tight md:text-[56px] lg:text-[64px]">Download Now</h2>
                     <p className="mt-6 text-xl text-white/60 font-medium">We don’t do spam or fluff. Unsubscribe anytime.</p>
 
-                    <div className="mt-16 max-w-md mx-auto">
+                    <div className="mt-8 max-w-md mx-auto">
                         <form
                             action="https://app.kit.com/forms/8257969/subscriptions"
                             method="post"

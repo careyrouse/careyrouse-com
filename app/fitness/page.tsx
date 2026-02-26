@@ -316,9 +316,9 @@ export default function FitnessCoachingPage() {
                 <div className="relative z-10 mx-auto w-full max-w-[1440px] px-6 pt-0 pb-12 md:py-32 md:px-12 lg:px-24">
                     <div className="max-w-4xl text-left">
                         <h1 className="text-[40px] font-black leading-[1.05] tracking-tight md:text-[88px] lg:text-[100px]">
-                            Consistency Isn’t <br className="hidden md:block" />
+                            Consistency Isn&rsquo;t <br className="hidden md:block" />
                             a Personality Trait.<br className="hidden md:block" />
-                            It’s a System.
+                            It&rsquo;s a System.
                         </h1>
 
                         <div className="mt-4 md:mt-16 flex flex-col gap-6 sm:flex-row sm:items-center">
@@ -338,42 +338,40 @@ export default function FitnessCoachingPage() {
       ═══════════════════════════════════════════ */}
             <section className="bg-white pt-20 pb-12 md:py-20">
                 <div className="mx-auto w-full max-w-[1440px] px-6 md:px-12 lg:px-24">
-                    <div className="max-w-4xl">
-                        <h2 className="text-[32px] font-black leading-tight md:text-[56px] lg:text-[64px]">Two ways to work with me</h2>
-                        <div className="mt-8 md:mt-12 space-y-8 text-2xl leading-relaxed text-black/80 font-medium">
-                            <p>
-                                <strong>Accountability Coaching:</strong> Remote, high-accountability coaching. <br />
-                                <strong>Co-Training™:</strong> Full-immersion, in-person transformation.
-                            </p>
-                            <p>
-                                If you’ve read <Link href="https://amzn.to/3HtU3ua" target="_blank" rel="noopener noreferrer" className="underline font-black decoration-[#0066FF] decoration-4 italic">Find Meaning Through Relentless Discipline</Link>, you already know what this is about. This isn’t another coaching program. It’s a full commitment to discipline — physically, mentally, and operationally.
-                            </p>
-                            <p>
-                                Every person starts with a one-hour assessment. That’s where we decide if you’re ready to begin <strong>Accountability Coaching</strong> — or, eventually, earn your way into <strong>Co-Training™</strong>.
-                            </p>
-                            <div className="pt-4 flex flex-col gap-4">
-                                <Link href="#how_it_works" className="text-2xl font-medium text-[#0066FF] hover:underline transition-all">
-                                    How it works ↓
-                                </Link>
-                                <a href="#faq" className="text-2xl font-medium text-[#0066FF] hover:underline transition-all">
-                                    Have questions? See the full FAQ ↓
-                                </a>
-                            </div>
+                    <h2 className="text-[32px] font-black leading-tight md:text-[56px] lg:text-[64px]">Two ways to work with me</h2>
+                    <div className="mt-8 md:mt-12 space-y-8 text-2xl leading-relaxed text-black/80 font-medium">
+                        <p>
+                            <strong>Accountability Coaching:</strong> Remote, high-accountability coaching. <br />
+                            <strong>Co-Training™:</strong> Full-immersion, in-person transformation.
+                        </p>
+                        <p>
+                            If you&rsquo;ve read <Link href="https://amzn.to/3HtU3ua" target="_blank" rel="noopener noreferrer" className="underline font-black decoration-[#0066FF] decoration-4 italic">Find Meaning Through Relentless Discipline</Link>, you already know what this is about. This isn&rsquo;t another coaching program. It&rsquo;s a full commitment to discipline — physically, mentally, and operationally.
+                        </p>
+                        <p>
+                            Every person starts with a one-hour assessment. That&rsquo;s where we decide if you&rsquo;re ready to begin <strong>Accountability Coaching</strong> — or, eventually, earn your way into <strong>Co-Training™</strong>.
+                        </p>
+                        <div className="pt-4 flex flex-col gap-4">
+                            <Link href="#how_it_works" className="text-2xl font-medium text-[#0066FF] hover:underline transition-all">
+                                How it works ↓
+                            </Link>
+                            <a href="#faq" className="text-2xl font-medium text-[#0066FF] hover:underline transition-all">
+                                Have questions? See the full FAQ ↓
+                            </a>
                         </div>
                     </div>
 
                     <div className="mt-16 md:mt-20">
-                        <h2 className="text-[32px] font-black leading-tight md:text-[56px] lg:text-[64px]">Two Ways to Build the Consistency You’ve Never Been Able to Keep.</h2>
+                        <h2 className="text-[32px] font-black leading-tight md:text-[56px] lg:text-[64px]">Two Ways to Build the Consistency You&rsquo;ve Never Been Able to Keep.</h2>
                         <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-2 items-center">
                             <div className="space-y-8 text-2xl leading-relaxed text-black/80 font-medium">
                                 <p>
-                                    I remove the biggest blocker, <strong>consistency</strong>, by giving you a system that you follow every day, not vague advice you’re left to figure out alone.
+                                    I remove the biggest blocker, <strong>consistency</strong>, by giving you a system that you follow every day, not vague advice you&rsquo;re left to figure out alone.
                                 </p>
                                 <p>
                                     <strong>Accountability Coaching</strong> builds consistency through structured planning, accountability, and daily check-ins, all designed around your environment.
                                 </p>
                                 <p>
-                                    <strong>Co-Training™</strong> is full immersion. I’m with you every session, every ride, every adjustment. You don’t need peak fitness to start. You need access to a gym, a road bike, and the discipline to follow through.
+                                    <strong>Co-Training™</strong> is full immersion. I&rsquo;m with you every session, every ride, every adjustment. You don&rsquo;t need peak fitness to start. You need access to a gym, a road bike, and the discipline to follow through.
                                 </p>
                             </div>
                             <div className="relative h-[300px] md:h-[480px] overflow-hidden rounded-[40px] shadow-2xl">

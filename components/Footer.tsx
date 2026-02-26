@@ -69,12 +69,12 @@ export default function Footer({ resourceLinks, workLinks, socialLinks }: Footer
                         </div>
 
                         {/* Stay Updated */}
-                        <div className="flex flex-col gap-5">
+                        <div className="flex flex-col gap-2">
                             <h5 className="text-[24px] font-bold leading-[32px] text-black">
-                                Stay Updated
+                                Subscribe
                             </h5>
                             <p className="text-[14px] leading-[20px] text-black font-bold opacity-40">
-                                Subscribe for the latest insights and inspiration.
+                                For the latest insights and inspiration.
                             </p>
 
                             {/* Kit.com embedded form */}
