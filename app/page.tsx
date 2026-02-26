@@ -10,14 +10,14 @@ export default function Home() {
       <section className="relative flex min-h-screen flex-col items-center justify-start">
         {/* Background image */}
         <Image
-          src="/images/beach.webp"
-          alt="Beach background"
+          src="/images/bike taos.webp"
+          alt="Carey Rouse biking in Taos"
           fill
           className="object-cover object-right-center"
           priority
         />
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/40 md:bg-black/70" />
+        <div className="absolute inset-0 bg-black/40 md:bg-black/60" />
 
         {/* Hero content */}
         <div className="relative z-10 mx-auto flex w-full max-w-[1280px] flex-1 flex-col justify-start px-4 pt-20 pb-20 md:px-6">
@@ -38,13 +38,13 @@ export default function Home() {
             <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
               <Link
                 href="https://careyrouse.com/life/"
-                className="inline-flex items-center justify-center rounded-full bg-black px-8 py-4 text-[18px] font-black leading-[24px] text-white no-underline shadow-2xl transition-all hover:bg-black/80 hover:scale-[1.02] active:scale-95"
+                className="inline-flex items-center justify-center rounded-full bg-black px-8 py-4 text-[18px] font-black leading-[24px] text-white text-center no-underline shadow-2xl transition-all hover:bg-black/80 hover:scale-[1.02] active:scale-95"
               >
                 Explore Life Coaching
               </Link>
               <Link
                 href="https://careyrouse.com/fitness"
-                className="inline-flex items-center justify-center rounded-full bg-black px-8 py-4 text-[18px] font-black leading-[24px] text-white no-underline shadow-2xl transition-all hover:bg-black/80 hover:scale-[1.02] active:scale-95"
+                className="inline-flex items-center justify-center rounded-full bg-black px-8 py-4 text-[18px] font-black leading-[24px] text-white text-center no-underline shadow-2xl transition-all hover:bg-black/80 hover:scale-[1.02] active:scale-95"
               >
                 Explore Fitness Coaching
               </Link>
@@ -56,7 +56,7 @@ export default function Home() {
       {/* ═══════════════════════════════════════════
           SECTION 2 — CHANGE AS THE HUMAN ARC
       ═══════════════════════════════════════════ */}
-      <section className="bg-white px-4 py-24 md:px-6 md:py-32">
+      <section className="bg-white px-4 py-12 md:px-6 md:py-20">
         <div className="mx-auto max-w-[1280px]">
           <h2 className="text-left text-[32px] font-black leading-tight tracking-tight md:text-[56px] lg:text-[64px] text-black">
             Change As The Human Arc
@@ -83,7 +83,7 @@ export default function Home() {
       {/* ═══════════════════════════════════════════
           SECTION 3 — ONE FRAMEWORK – TWO ENTRY POINTS
       ═══════════════════════════════════════════ */}
-      <section className="bg-white px-4 py-24 md:px-6 md:py-32">
+      <section className="bg-white px-4 py-12 md:px-6 md:py-20">
         <div className="mx-auto max-w-[1280px]">
           <h2 className="text-left text-[32px] font-black leading-tight tracking-tight md:text-[56px] lg:text-[64px] text-black">
             One Framework – Two Entry Points
@@ -118,7 +118,7 @@ export default function Home() {
               <div>
                 <Link
                   href="https://careyrouse.com/life/"
-                  className="inline-flex items-center justify-center rounded-full bg-black px-8 py-4 text-[16px] font-black leading-[24px] text-white no-underline shadow-xl transition-all hover:bg-black/80 hover:scale-[1.02] active:scale-95"
+                  className="inline-flex items-center justify-center rounded-full bg-black px-8 py-4 text-[16px] font-black leading-[24px] text-white text-center no-underline shadow-xl transition-all hover:bg-black/80 hover:scale-[1.02] active:scale-95"
                 >
                   Explore Life Coaching
                 </Link>
@@ -139,7 +139,7 @@ export default function Home() {
               <div>
                 <Link
                   href="https://careyrouse.com/fitness"
-                  className="inline-flex items-center justify-center rounded-full bg-black px-8 py-4 text-[16px] font-black leading-[24px] text-white no-underline shadow-xl transition-all hover:bg-black/80 hover:scale-[1.02] active:scale-95"
+                  className="inline-flex items-center justify-center rounded-full bg-black px-8 py-4 text-[16px] font-black leading-[24px] text-white text-center no-underline shadow-xl transition-all hover:bg-black/80 hover:scale-[1.02] active:scale-95"
                 >
                   Explore Fitness Coaching
                 </Link>
@@ -152,7 +152,7 @@ export default function Home() {
       {/* ═══════════════════════════════════════════
           SECTION 4 — SYSTEMS BEAT MOTIVATION
       ═══════════════════════════════════════════ */}
-      <section className="bg-white px-4 py-24 md:px-6 md:py-32">
+      <section className="bg-white px-4 py-12 md:px-6 md:py-20">
         <div className="mx-auto max-w-[1280px]">
           <h2 className="text-left text-[32px] font-black leading-tight tracking-tight md:text-[56px] lg:text-[64px] text-black">
             Systems Beat Motivation
@@ -169,11 +169,11 @@ export default function Home() {
       {/* ═══════════════════════════════════════════
           SECTION 5 — MEET CAREY ROUSE
       ═══════════════════════════════════════════ */}
-      <section className="bg-white px-4 py-24 md:px-6 md:py-32">
+      <section className="bg-white px-4 py-12 md:px-6 md:py-20">
         <div className="mx-auto max-w-[1280px]">
           <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
             {/* Headshot */}
-            <div className="flex justify-center">
+            <div className="flex justify-center -mt-8 md:-mt-20">
               <Image
                 src="/images/2000-2000 headshot January.webp"
                 alt="Carey Rouse headshot"
@@ -206,7 +206,7 @@ export default function Home() {
       {/* ═══════════════════════════════════════════
           SECTION 6 — START HERE (CTAs)
       ═══════════════════════════════════════════ */}
-      <section className="bg-white px-4 py-24 md:px-6 md:py-32">
+      <section className="bg-white px-4 py-12 md:px-6 md:py-20">
         <div className="mx-auto max-w-[1280px]">
           <h2 className="mb-12 text-center text-[32px] font-black leading-tight tracking-tight md:text-[56px] lg:text-[64px] text-black">
             Start Here
@@ -214,13 +214,13 @@ export default function Home() {
           <div className="grid grid-cols-1 items-center gap-6 sm:grid-cols-2 sm:justify-items-center">
             <Link
               href="https://careyrouse.com/life/"
-              className="inline-flex items-center justify-center rounded-full bg-black px-10 py-5 text-[18px] font-black leading-[24px] text-white no-underline shadow-2xl transition-all hover:bg-black/80 hover:scale-[1.05] active:scale-95"
+              className="inline-flex items-center justify-center rounded-full bg-black px-10 py-5 text-[18px] font-black leading-[24px] text-white text-center no-underline shadow-2xl transition-all hover:bg-black/80 hover:scale-[1.05] active:scale-95"
             >
               Explore Life Coaching
             </Link>
             <Link
               href="https://careyrouse.com/fitness"
-              className="inline-flex items-center justify-center rounded-full bg-black px-10 py-5 text-[18px] font-black leading-[24px] text-white no-underline shadow-2xl transition-all hover:bg-black/80 hover:scale-[1.05] active:scale-95"
+              className="inline-flex items-center justify-center rounded-full bg-black px-10 py-5 text-[18px] font-black leading-[24px] text-white text-center no-underline shadow-2xl transition-all hover:bg-black/80 hover:scale-[1.05] active:scale-95"
             >
               Explore Fitness Coaching
             </Link>

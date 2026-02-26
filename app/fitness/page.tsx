@@ -310,7 +310,7 @@ export default function FitnessCoachingPage() {
                             priority
                         />
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-r from-black/60 md:from-black/95 via-black/30 md:via-black/50 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-black/40 md:from-black/70 via-black/10 md:via-black/30 to-transparent" />
                 </div>
 
                 <div className="relative z-10 mx-auto w-full max-w-[1440px] px-6 pt-0 pb-12 md:py-32 md:px-12 lg:px-24">

@@ -7,9 +7,9 @@ export default function BookPage() {
             {/* ═══════════════════════════════════════════
           SECTION 1 — HERO
       ═══════════════════════════════════════════ */}
-            <section className="relative overflow-hidden bg-black py-24 text-white md:py-32">
+            <section className="relative overflow-hidden bg-black pt-12 pb-16 md:py-24 text-white">
                 <div className="mx-auto w-full max-w-[1440px] px-6 md:px-12 lg:px-24">
-                    <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+                    <div className="grid grid-cols-1 items-center gap-8 md:gap-12 lg:grid-cols-2">
                         <div className="order-2 lg:order-1">
                             <h1 className="text-[56px] font-black leading-[1.05] tracking-tight md:text-[88px] lg:text-[100px]">
                                 Find Meaning <br />
@@ -25,7 +25,7 @@ export default function BookPage() {
                                     href="https://amzn.to/3HtU3ua"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="inline-block rounded-full bg-[#0066FF] px-12 py-6 text-xl font-black text-white transition-all hover:scale-105 hover:bg-[#0052CC] active:scale-95 shadow-2xl"
+                                    className="inline-flex items-center justify-center rounded-full bg-[#0066FF] px-12 py-4 md:py-5 text-xl font-black text-white text-center transition-all hover:scale-105 hover:bg-[#0052CC] active:scale-95 shadow-2xl"
                                 >
                                     Buy on Amazon
                                 </Link>
@@ -49,7 +49,7 @@ export default function BookPage() {
             {/* ═══════════════════════════════════════════
           SECTION 2 — THE TRUTH
       ═══════════════════════════════════════════ */}
-            <section className="bg-white py-32">
+            <section className="bg-white py-16 md:py-24">
                 <div className="mx-auto w-full max-w-[1440px] px-6 md:px-12 lg:px-24">
                     <div className="max-w-4xl">
                         <h2 className="text-[40px] font-black leading-tight md:text-[56px] lg:text-[64px]">
@@ -73,10 +73,10 @@ export default function BookPage() {
             {/* ═══════════════════════════════════════════
           SECTION 3 — LEARNINGS
       ═══════════════════════════════════════════ */}
-            <section className="bg-[#F9F9F9] py-32">
+            <section className="bg-[#F9F9F9] py-16 md:py-24">
                 <div className="mx-auto w-full max-w-[1440px] px-6 md:px-12 lg:px-24">
                     <h2 className="text-[40px] font-black md:text-[56px] lg:text-[64px]">Inside, You Will Learn How To:</h2>
-                    <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <div className="mt-10 md:mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                         {[
                             {
                                 title: "Ignite Relentless Discipline",
@@ -115,9 +115,9 @@ export default function BookPage() {
             {/* ═══════════════════════════════════════════
           SECTION 4 — AUDIO & CTA
       ═══════════════════════════════════════════ */}
-            <section className="bg-white py-32">
+            <section className="bg-white py-16 md:py-24">
                 <div className="mx-auto w-full max-w-[1440px] px-6 md:px-12 lg:px-24">
-                    <div className="grid grid-cols-1 items-center gap-20 lg:grid-cols-2">
+                    <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
                         <div className="relative h-[400px] w-full md:h-[600px] overflow-hidden rounded-[40px] shadow-2xl">
                             <Image
                                 src="/images/Audio cover.webp"
@@ -126,17 +126,17 @@ export default function BookPage() {
                                 className="object-cover"
                             />
                         </div>
-                        <div className="space-y-12">
+                        <div className="flex flex-col gap-6 md:gap-8">
                             <h2 className="text-[48px] font-black leading-tight md:text-[64px]">Get Your Copy</h2>
                             <p className="text-2xl font-medium text-black/70 leading-relaxed">
                                 This book is for the doers, the strivers who know the journey is the reward. It’s filled with stories of reality and payoff.
                             </p>
-                            <div className="pt-8">
+                            <div>
                                 <Link
                                     href="https://amzn.to/3HtU3ua"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="inline-block rounded-full bg-black px-12 py-6 text-xl font-black text-white transition-all hover:scale-105 hover:bg-[#0066FF] active:scale-95 shadow-2xl"
+                                    className="inline-flex items-center justify-center rounded-full bg-black px-12 py-4 md:py-5 text-xl font-black text-white text-center transition-all hover:scale-105 hover:bg-[#0066FF] active:scale-95 shadow-2xl"
                                 >
                                     Available on Amazon
                                 </Link>

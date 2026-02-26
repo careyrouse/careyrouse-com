@@ -4,7 +4,7 @@ export default function PrivacyPage() {
             <div className="mx-auto w-full max-w-[1280px] px-6 md:px-12 lg:px-24">
                 <h1 className="text-[48px] font-black md:text-[64px] mb-12">Privacy Policy</h1>
                 <div className="prose prose-xl max-w-4xl text-black/80 font-medium">
-                    <p className="mb-12 text-black/60">Effective Date: January 1, 2025</p>
+                    <p className="mb-12 text-black/60">Effective Date: January 1, 2026</p>
 
                     <p className="mb-12">This Privacy Policy describes how Carey Rouse collects, uses, and protects your personal information when you visit or use our website.</p>
 

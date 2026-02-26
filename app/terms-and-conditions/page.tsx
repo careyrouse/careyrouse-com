@@ -4,7 +4,7 @@ export default function TermsPage() {
             <div className="mx-auto w-full max-w-[1280px] px-6 md:px-12 lg:px-24">
                 <h1 className="text-[48px] font-black md:text-[64px] mb-12">Terms and Conditions</h1>
                 <div className="prose prose-xl max-w-4xl text-black/80 font-medium">
-                    <p className="mb-12 text-black/60">Effectve Date: January 1, 2025</p>
+                    <p className="mb-12 text-black/60">Effective Date: January 1, 2026</p>
 
                     <p className="mb-12">These Terms and Conditions govern your use of the CareyRouse.com website and any services offered by Carey Rouse. By accessing or using this website, you agree to be bound by these terms.</p>
 

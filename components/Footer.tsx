@@ -23,12 +23,14 @@ interface FooterProps {
 export default function Footer({ resourceLinks, workLinks, socialLinks }: FooterProps) {
     const pathname = usePathname();
     const isEmailConfirmation = pathname === "/email-confirmation";
+    const isFindMeaningReader = pathname === "/find-meaning-reader";
+    const hideFooterColumns = isEmailConfirmation || isFindMeaningReader;
 
     return (
         <footer className="border-t border-black bg-white">
             <div className="mx-auto max-w-[1280px] px-4 pt-5 pb-20 md:px-6">
 
-                {!isEmailConfirmation && (
+                {!hideFooterColumns && (
                     <div className="grid grid-cols-1 gap-8 pt-4 sm:grid-cols-2 lg:grid-cols-[30%_30%_30%] lg:justify-center">
                         {/* Resources */}
                         <div className="flex flex-col gap-2 pl-2">
@@ -129,7 +131,7 @@ export default function Footer({ resourceLinks, workLinks, socialLinks }: Footer
                 )}
 
                 {/* Bottom bar */}
-                <div className={`flex flex-col items-center gap-4 ${!isEmailConfirmation ? "mt-8 border-t border-black/10 pt-6" : ""} sm:flex-row sm:justify-between`}>
+                <div className={`flex flex-col items-center gap-4 ${!hideFooterColumns ? "mt-8 border-t border-black/10 pt-6" : ""} sm:flex-row sm:justify-between`}>
                     <p className="text-[14px] leading-[20px] text-black opacity-60 font-medium">
                         © 2026 Carey Rouse. All rights reserved.
                     </p>

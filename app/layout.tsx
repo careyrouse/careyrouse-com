@@ -88,6 +88,60 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
+        {/* Google Tag Manager (Script component for better performance) */}
+        <Script id="google-tag-manager" strategy="afterInteractive">
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-MFZK3689');`}
+        </Script>
+
+        {/* Structured Data (Schema.org JSON-LD) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Person",
+                  "@id": "https://careyrouse.com/#me",
+                  "name": "Carey Rouse",
+                  "url": "https://careyrouse.com/",
+                  "image": "https://careyrouse.com/images/2000-2000 headshot January.webp",
+                  "description": "Carey Rouse is a writer, coach, and speaker focused on systems for disciplined living, intentionality, and personal transformation.",
+                  "sameAs": [
+                    "https://www.linkedin.com/in/careyrouse",
+                    "https://www.facebook.com/careyrouse",
+                    "https://www.amazon.com/stores/Carey-Rouse/author/B0DYNS4KMB",
+                    "https://www.youtube.com/@careyrouse1"
+                  ],
+                  "jobTitle": "Writer, Coach, and Speaker",
+                  "worksFor": {
+                    "@type": "Organization",
+                    "name": "Carey Rouse"
+                  }
+                },
+                {
+                  "@type": "Book",
+                  "@id": "https://www.amazon.com/dp/B0FJ5QKJ1R",
+                  "name": "Find Meaning Through Relentless Discipline: Lessons From Living a Life to the Fullest",
+                  "author": {
+                    "@id": "https://careyrouse.com/#me"
+                  },
+                  "url": "https://www.amazon.com/dp/B0FJ5QKJ1R",
+                  "image": "https://careyrouse.com/images/3 book 3d cover cropped.webp",
+                  "publisher": {
+                    "@type": "Organization",
+                    "name": "Independent"
+                  }
+                }
+              ]
+            })
+          }}
+        />
+
         {/* ═══════ HEADER / NAVIGATION ═══════ */}
         <header className="sticky top-0 z-50 border-b border-black/10 bg-white">
           <div className="mx-auto flex max-w-[1280px] items-center justify-between px-4 py-3 md:px-6 lg:w-[90%]">
