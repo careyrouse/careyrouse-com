@@ -5,21 +5,13 @@ import Script from "next/script";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import NextLink from "next/link";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "Carey Rouse – Author & Coach | Relentless Discipline",
   description:
     "Carey Rouse, author of *Find Meaning Through Relentless Discipline*, helps people build lives of purpose through structure, grit, and discipline.",
 };
-
-/* ─── NAV LINKS ─── */
-const navLinks = [
-  { label: "About", href: "/about" },
-  { label: "Life Coaching", href: "/life" },
-  { label: "Fitness Coaching", href: "/fitness" },
-  { label: "My Book", href: "/book" },
-  { label: "Contact", href: "/contact" },
-];
 
 /* ─── FOOTER DATA ─── */
 const resourceLinks = [
@@ -143,73 +135,7 @@ export default function RootLayout({
         />
 
         {/* ═══════ HEADER / NAVIGATION ═══════ */}
-        <header className="sticky top-0 z-50 border-b border-black/10 bg-white">
-          <div className="mx-auto flex max-w-[1280px] items-center justify-between px-4 py-3 md:px-6 lg:w-[90%]">
-            {/* Logo */}
-            <NextLink href="/" className="shrink-0">
-              <Image
-                src="/images/CR black on trans.webp"
-                alt="Carey Rouse"
-                width={160}
-                height={50}
-                className="h-[50px] w-auto"
-                priority
-              />
-            </NextLink>
-
-            {/* Desktop Nav */}
-            <nav className="hidden items-center gap-0 lg:flex">
-              {navLinks.map((link) => (
-                <NextLink
-                  key={link.href}
-                  href={link.href}
-                  className="px-[18px] py-[13px] text-[16px] leading-[24px] text-black no-underline transition-colors hover:text-[#0066FF]"
-                >
-                  {link.label}
-                </NextLink>
-              ))}
-            </nav>
-
-            {/* Mobile Hamburger (checkbox toggle) */}
-            <label
-              htmlFor="mobile-menu-toggle"
-              className="flex cursor-pointer items-center justify-center rounded bg-black/5 p-1.5 text-black lg:hidden"
-              aria-label="Toggle menu"
-            >
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3 6h18M3 12h18M3 18h18"
-                />
-              </svg>
-            </label>
-          </div>
-
-          {/* Mobile dropdown */}
-          <input
-            type="checkbox"
-            id="mobile-menu-toggle"
-            className="peer hidden"
-          />
-          <nav className="hidden flex-col border-t border-black/10 bg-white peer-checked:flex lg:!hidden">
-            {navLinks.map((link) => (
-              <NextLink
-                key={link.href}
-                href={link.href}
-                className="px-6 py-3 text-[16px] text-black no-underline hover:bg-black/5"
-              >
-                {link.label}
-              </NextLink>
-            ))}
-          </nav>
-        </header>
+        <Header />
 
         {/* ═══════ MAIN CONTENT ═══════ */}
         {children}
