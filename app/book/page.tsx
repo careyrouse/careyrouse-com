@@ -34,7 +34,7 @@ export default function BookPage() {
                         <div className="order-1 flex justify-center lg:order-2">
                             <div className="relative h-[400px] w-full max-w-[500px] md:h-[600px]">
                                 <Image
-                                    src="https://careyrouse.com/wp-content/uploads/2025/10/3-book-3d-cover-cropped-1024x913.webp"
+                                    src="/images/3 book 3d cover cropped.webp"
                                     alt="Find Meaning Through Relentless Discipline Book Cover"
                                     fill
                                     className="object-contain"
@@ -120,7 +120,7 @@ export default function BookPage() {
                     <div className="grid grid-cols-1 items-center gap-20 lg:grid-cols-2">
                         <div className="relative h-[400px] w-full md:h-[600px] overflow-hidden rounded-[40px] shadow-2xl">
                             <Image
-                                src="https://careyrouse.com/wp-content/uploads/2025/10/Audio-cover.webp"
+                                src="/images/Audio cover.webp"
                                 alt="Find Meaning Through Relentless Discipline Audio Cover"
                                 fill
                                 className="object-cover"

@@ -24,11 +24,11 @@ const resourceLinks = [
   { label: "My Book", href: "/book" },
   {
     label: "1001 Ways Discipline eBook",
-    href: "https://careyrouse.com/1001-ways-discipline-ebook/",
+    href: "/1001-ways-discipline-ebook",
   },
   {
     label: "21-Day Discipline Challenge",
-    href: "https://careyrouse.com/21-day-discipline-challenge/",
+    href: "/21-day-discipline-challenge",
   },
 ];
 
@@ -92,7 +92,7 @@ export default function RootLayout({
             {/* Logo */}
             <Link href="/" className="shrink-0">
               <Image
-                src="https://careyrouse.com/wp-content/uploads/2025/06/CR-black-on-trans.webp"
+                src="/images/CR black on trans.webp"
                 alt="Carey Rouse"
                 width={160}
                 height={50}

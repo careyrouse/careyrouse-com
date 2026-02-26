@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import FitnessForm from "./FitnessForm";
 
 export const metadata: Metadata = {
     title: "Fitness Coaching with Carey Rouse | Transform Nutrition & Life",
@@ -287,33 +288,46 @@ export default function FitnessCoachingPage() {
             {/* ═══════════════════════════════════════════
           SECTION 1 — HERO
       ═══════════════════════════════════════════ */}
-            <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-black text-white">
+            <section className="relative flex min-h-[60vh] md:min-h-screen flex-col items-start justify-end md:items-center md:justify-center overflow-hidden bg-black text-white">
                 <div className="absolute inset-0 z-0 scale-105 pointer-events-none">
-                    <Image
-                        src="https://careyrouse.com/wp-content/uploads/2025/06/Fort-Smith-Fitness-Shoot-20-1-scaled.webp"
-                        alt="Carey Rouse Fitness Coaching"
-                        fill
-                        className="object-cover object-center opacity-70"
-                        priority
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/50 to-transparent" />
+                    {/* Desktop Image */}
+                    <div className="hidden md:block absolute inset-0">
+                        <Image
+                            src="/images/Carey Rouse Indoor Cycle.webp"
+                            alt="Carey Rouse Fitness Coaching Desktop"
+                            fill
+                            className="object-cover object-center opacity-70"
+                            priority
+                        />
+                    </div>
+                    {/* Mobile Image */}
+                    <div className="block md:hidden absolute inset-0">
+                        <Image
+                            src="/images/Carey Rouse Indoor Cycle cropped medium.webp"
+                            alt="Carey Rouse Fitness Coaching Mobile"
+                            fill
+                            className="object-cover object-right opacity-70"
+                            priority
+                        />
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-black/60 md:from-black/95 via-black/30 md:via-black/50 to-transparent" />
                 </div>
 
-                <div className="relative z-10 mx-auto w-full max-w-[1440px] px-6 py-32 md:px-12 lg:px-24">
+                <div className="relative z-10 mx-auto w-full max-w-[1440px] px-6 pt-0 pb-12 md:py-32 md:px-12 lg:px-24">
                     <div className="max-w-4xl text-left">
-                        <h1 className="text-[56px] font-black leading-[1.05] tracking-tight md:text-[88px] lg:text-[100px]">
+                        <h1 className="text-[40px] font-black leading-[1.05] tracking-tight md:text-[88px] lg:text-[100px]">
                             Consistency Isn’t <br className="hidden md:block" />
                             a Personality Trait.<br className="hidden md:block" />
                             It’s a System.
                         </h1>
 
-                        <div className="mt-16 flex flex-col gap-6 sm:flex-row sm:items-center">
-                            <Link
+                        <div className="mt-4 md:mt-16 flex flex-col gap-6 sm:flex-row sm:items-center">
+                            <a
                                 href="#application"
                                 className="rounded-full bg-[#0066FF] px-12 py-6 text-center text-xl font-black text-white transition-all hover:scale-105 hover:bg-[#0052CC] active:scale-95 shadow-2xl"
                             >
-                                Apply For Assessment
-                            </Link>
+                                Apply Now
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -322,34 +336,34 @@ export default function FitnessCoachingPage() {
             {/* ═══════════════════════════════════════════
           SECTION 2 — TWO WAYS TO WORK
       ═══════════════════════════════════════════ */}
-            <section className="bg-white py-32">
+            <section className="bg-white pt-20 pb-12 md:py-20">
                 <div className="mx-auto w-full max-w-[1440px] px-6 md:px-12 lg:px-24">
                     <div className="max-w-4xl">
-                        <h2 className="text-[40px] font-black leading-tight md:text-[56px] lg:text-[64px]">Two ways to work with me</h2>
-                        <div className="mt-12 space-y-8 text-2xl leading-relaxed text-black/80 font-medium">
+                        <h2 className="text-[32px] font-black leading-tight md:text-[56px] lg:text-[64px]">Two ways to work with me</h2>
+                        <div className="mt-8 md:mt-12 space-y-8 text-2xl leading-relaxed text-black/80 font-medium">
                             <p>
                                 <strong>Accountability Coaching:</strong> Remote, high-accountability coaching. <br />
                                 <strong>Co-Training™:</strong> Full-immersion, in-person transformation.
                             </p>
                             <p>
-                                If you’ve read <Link href="https://amzn.to/3HtU3ua" className="underline font-black decoration-[#0066FF] decoration-4 italic">Find Meaning Through Relentless Discipline</Link>, you already know what this is about. This isn’t another coaching program. It’s a full commitment to discipline — physically, mentally, and operationally.
+                                If you’ve read <Link href="https://amzn.to/3HtU3ua" target="_blank" rel="noopener noreferrer" className="underline font-black decoration-[#0066FF] decoration-4 italic">Find Meaning Through Relentless Discipline</Link>, you already know what this is about. This isn’t another coaching program. It’s a full commitment to discipline — physically, mentally, and operationally.
                             </p>
                             <p>
                                 Every person starts with a one-hour assessment. That’s where we decide if you’re ready to begin <strong>Accountability Coaching</strong> — or, eventually, earn your way into <strong>Co-Training™</strong>.
                             </p>
                             <div className="pt-4 flex flex-col gap-4">
-                                <Link href="#how_it_works" className="text-xl font-bold text-[#0066FF] hover:underline transition-all">
+                                <Link href="#how_it_works" className="text-2xl font-medium text-[#0066FF] hover:underline transition-all">
                                     How it works ↓
                                 </Link>
-                                <Link href="#faq" className="text-xl font-bold text-[#0066FF] hover:underline transition-all">
+                                <a href="#faq" className="text-2xl font-medium text-[#0066FF] hover:underline transition-all">
                                     Have questions? See the full FAQ ↓
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     </div>
 
-                    <div className="mt-32">
-                        <h2 className="text-[40px] font-black leading-tight md:text-[56px] lg:text-[64px]">Two Ways to Build the Consistency You’ve Never Been Able to Keep.</h2>
+                    <div className="mt-16 md:mt-20">
+                        <h2 className="text-[32px] font-black leading-tight md:text-[56px] lg:text-[64px]">Two Ways to Build the Consistency You’ve Never Been Able to Keep.</h2>
                         <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-2 items-center">
                             <div className="space-y-8 text-2xl leading-relaxed text-black/80 font-medium">
                                 <p>
@@ -362,9 +376,9 @@ export default function FitnessCoachingPage() {
                                     <strong>Co-Training™</strong> is full immersion. I’m with you every session, every ride, every adjustment. You don’t need peak fitness to start. You need access to a gym, a road bike, and the discipline to follow through.
                                 </p>
                             </div>
-                            <div className="relative h-[480px] overflow-hidden rounded-[40px] shadow-2xl">
+                            <div className="relative h-[300px] md:h-[480px] overflow-hidden rounded-[40px] shadow-2xl">
                                 <Image
-                                    src="https://careyrouse.com/wp-content/uploads/2025/06/group-ride-1024x613.webp"
+                                    src="/images/group ride.webp"
                                     alt="Carey Rouse Group Training Ride"
                                     fill
                                     className="object-cover"
@@ -378,51 +392,77 @@ export default function FitnessCoachingPage() {
             {/* ═══════════════════════════════════════════
           SECTION 3 — SERVICE COMPARISON
       ═══════════════════════════════════════════ */}
-            <section className="bg-[#111] py-32 text-white">
+            <section className="bg-white md:bg-[#111] pt-20 pb-12 md:py-20 text-black md:text-white">
                 <div className="mx-auto w-full max-w-[1440px] px-6 md:px-12 lg:px-24">
-                    <h2 className="text-center text-[40px] font-black md:text-[56px] lg:text-[64px]">Two Programs — One Goal: Build Relentless Consistency</h2>
+                    <h2 className="text-center text-[32px] font-black md:text-[56px] lg:text-[64px]">Two Programs — One Goal: Build Relentless Consistency</h2>
 
-                    <div className="mt-20 overflow-x-auto rounded-[40px] border border-white/10 bg-white/5 backdrop-blur-md">
-                        <table className="w-full text-left min-w-[900px]">
-                            <thead>
-                                <tr className="border-b border-white/10">
-                                    <th className="px-10 py-8 text-xl font-black uppercase tracking-widest text-white/40">Feature</th>
-                                    <th className="px-10 py-8 text-xl font-black uppercase tracking-widest text-[#0066FF]">Accountability Coaching</th>
-                                    <th className="px-10 py-8 text-xl font-black uppercase tracking-widest text-white">Co-Training™</th>
-                                </tr>
-                            </thead>
-                            <tbody className="divide-y divide-white/5">
-                                {comparisonFeatures.map((f, i) => (
-                                    <tr key={i} className="group hover:bg-white/5 transition-colors">
-                                        <td className="px-10 py-8 text-lg font-black text-white/50">{f.feature}</td>
-                                        <td className="px-10 py-8 text-lg font-medium text-white/80">{f.accountability}</td>
-                                        <td className="px-10 py-8 text-lg font-bold text-white">{f.coTraining}</td>
+                    <div className="mt-20">
+                        {/* Mobile Card Layout (visible on mobile only) */}
+                        <div className="space-y-6 md:hidden">
+                            {comparisonFeatures.map((f, i) => (
+                                <div key={i} className="overflow-hidden rounded-2xl border border-white/10 bg-[#1a1a1a] shadow-xl">
+                                    <div className="bg-black px-6 py-4 border-b border-white/10">
+                                        <h3 className="text-xl font-black uppercase tracking-widest text-white">{f.feature}</h3>
+                                    </div>
+                                    <div className="p-6 space-y-6">
+                                        <div>
+                                            <span className="text-xs font-black uppercase tracking-widest text-[#0066FF] block mb-2">Accountability Coaching</span>
+                                            <p className="text-lg font-bold text-white">{f.accountability}</p>
+                                        </div>
+                                        <div className="pt-6 border-t border-white/5">
+                                            <span className="text-xs font-black uppercase tracking-widest text-white/40 block mb-2">Co-Training™</span>
+                                            <p className="text-lg font-bold text-white">{f.coTraining}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Desktop Table Layout (visible on tablet/desktop only) */}
+                        <div className="hidden md:block overflow-x-auto rounded-[40px] border border-white/10 bg-white/5 backdrop-blur-md">
+                            <table className="w-full text-left min-w-[900px]">
+                                <thead>
+                                    <tr className="border-b border-white/10">
+                                        <th className="px-10 py-8 text-xl font-black uppercase tracking-widest text-white/40">Feature</th>
+                                        <th className="px-10 py-8 text-xl font-black uppercase tracking-widest text-[#0066FF]">Accountability Coaching</th>
+                                        <th className="px-10 py-8 text-xl font-black uppercase tracking-widest text-white">Co-Training™</th>
                                     </tr>
-                                ))}
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tbody className="divide-y divide-white/5">
+                                    {comparisonFeatures.map((f, i) => (
+                                        <tr key={i} className="group hover:bg-white/5 transition-colors">
+                                            <td className="px-10 py-8 text-lg font-black text-white/50">{f.feature}</td>
+                                            <td className="px-10 py-8 text-lg font-bold text-white">{f.accountability}</td>
+                                            <td className="px-10 py-8 text-lg font-bold text-white">{f.coTraining}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                    <p className="mt-8 text-center text-white/40 font-medium">* Assessment covered as part of your Accountability Coaching program.</p>
                 </div>
             </section>
 
             {/* ═══════════════════════════════════════════
           SECTION 4 — THE ASSESSMENT
       ═══════════════════════════════════════════ */}
-            <section className="bg-white py-32" id="how_it_works">
+            <section className="bg-white pt-20 pb-12 md:py-20" id="how_it_works">
                 <div className="mx-auto w-full max-w-[1440px] px-6 md:px-12 lg:px-24">
-                    <h2 className="text-[40px] font-black md:text-[56px] lg:text-[64px]">How The Assessment Works</h2>
-                    <div className="mt-16 max-w-4xl space-y-8 text-2xl font-medium text-black/80">
-                        <p>Every application goes through manual review. If accepted, you’ll receive a link to schedule your mandatory free 60-minute assessment.</p>
+                    <h2 className="text-[32px] font-black md:text-[56px] lg:text-[64px]">How The Assessment Works</h2>
+                    <div className="mt-8 md:mt-16 max-w-4xl space-y-8 text-2xl font-medium text-black/80">
+                        <p>If accepted, you’ll receive a link to schedule your mandatory free 60-minute assessment.</p>
                         <ul className="list-disc pl-6 space-y-4">
-                            <li><strong>Applicants:</strong> complete your assessment over Google Meet.</li>
+                            <li>Complete your assessment over Google Meet.</li>
                             <li>During the assessment, we’ll cover goals, background, equipment access, and readiness. If approved, you begin <strong>Accountability Coaching</strong> immediately. Strong fit + Austin may be invited to <strong>Co-Training™</strong> later.</li>
                         </ul>
-                        <p className="pt-4">
-                            <Link href="#faq" className="text-xl font-bold text-[#0066FF] hover:underline transition-all">
-                                Have questions? See the full FAQ
-                            </Link>
-                        </p>
+                        <div className="mt-12">
+                            <a
+                                href="#application"
+                                className="inline-block rounded-full bg-[#0066FF] px-12 py-6 text-center text-xl font-black text-white transition-all hover:scale-105 hover:bg-[#0052CC] active:scale-95 shadow-2xl"
+                            >
+                                Apply Now
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -430,17 +470,17 @@ export default function FitnessCoachingPage() {
             {/* ═══════════════════════════════════════════
           SECTION 5 — FAQ
       ═══════════════════════════════════════════ */}
-            <section id="faq" className="mx-auto w-full max-w-[1440px] px-6 py-40 md:px-12 lg:px-24 bg-[#F9F9F9]/50">
+            <section id="faq" className="mx-auto w-full max-w-[1440px] px-6 pt-24 pb-12 md:px-12 lg:px-24 bg-[#F9F9F9]/50">
                 <div className="max-w-4xl mx-auto">
-                    <h2 className="text-[40px] font-black md:text-[56px] lg:text-[64px]">Coaching FAQ</h2>
-                    <div className="mt-20 divide-y divide-black/10 border-y border-black/10">
+                    <h2 className="text-[32px] font-black md:text-[56px] lg:text-[64px]">Coaching FAQ</h2>
+                    <div className="mt-8 md:mt-20 divide-y divide-black/10 border-y border-black/10">
                         {fitnessFaqs.map((item, i) => (
-                            <details key={i} className="group py-10 transition-all hover:bg-[#F9F9F9] px-4 md:px-8">
-                                <summary className="flex cursor-pointer list-none items-center justify-between text-2xl font-black md:text-3xl">
+                            <details key={i} className="group py-6 transition-all hover:bg-[#F9F9F9] px-4 md:px-8 focus:outline-none">
+                                <summary className="flex cursor-pointer list-none items-center justify-between text-xl font-black md:text-2xl">
                                     <span>{item.question}</span>
-                                    <div className="flex-shrink-0 ml-4 font-light text-5xl transition-transform duration-500 group-open:rotate-45">+</div>
+                                    <div className="flex-shrink-0 ml-4 font-light text-3xl transition-transform duration-500 group-open:rotate-45">+</div>
                                 </summary>
-                                <div className="mt-8 text-2xl leading-relaxed text-black/60 font-medium max-w-3xl">
+                                <div className="mt-4 text-lg leading-relaxed text-black/60 font-medium max-w-3xl">
                                     {item.answer}
                                 </div>
                             </details>
@@ -452,40 +492,19 @@ export default function FitnessCoachingPage() {
             {/* ═══════════════════════════════════════════
           SECTION 6 — APPLICATION CTA (Conversion)
       ═══════════════════════════════════════════ */}
-            <section id="application" className="bg-black py-40 text-white relative overflow-hidden">
+            <section id="application" className="bg-black pt-24 pb-20 md:py-24 text-white relative overflow-hidden">
                 <div className="mx-auto w-full max-w-[1000px] px-6 text-left relative z-10">
                     <span className="text-[#0066FF] font-black uppercase tracking-widest text-xl">Get Started</span>
-                    <h2 className="mt-8 text-[56px] font-black leading-[0.95] md:text-[88px]">Start With an Assessment</h2>
+                    <h2 className="mt-8 text-[40px] font-black leading-[0.95] md:text-[88px]">Start With an Application</h2>
                     <p className="mt-12 text-2xl font-bold opacity-60 md:text-3xl max-w-2xl">
                         Complete this brief application so I can review your fit. If accepted, you’ll get a link to book a free 60-minute assessment.
                     </p>
 
                     <div className="mt-20">
-                        <form className="grid grid-cols-1 gap-8 md:grid-cols-2">
-                            <div className="space-y-4">
-                                <label className="block text-xl font-bold opacity-60">Full Name</label>
-                                <input type="text" className="w-full bg-white/5 border border-white/20 rounded-2xl px-6 py-4 text-white font-bold focus:border-[#0066FF] outline-none transition-colors" />
-                            </div>
-                            <div className="space-y-4">
-                                <label className="block text-xl font-bold opacity-60">Email Address</label>
-                                <input type="email" className="w-full bg-white/5 border border-white/20 rounded-2xl px-6 py-4 text-white font-bold focus:border-[#0066FF] outline-none transition-colors" />
-                            </div>
-                            <div className="space-y-4 md:col-span-2">
-                                <label className="block text-xl font-bold opacity-60">Primary Goal (Health, Performance, Reset)</label>
-                                <textarea className="w-full bg-white/5 border border-white/20 rounded-2xl px-6 py-4 text-white font-bold focus:border-[#0066FF] outline-none transition-colors h-40" />
-                            </div>
-                            <div className="md:col-span-2">
-                                <button className="w-full rounded-2xl bg-[#0066FF] py-6 text-2xl font-black text-white hover:bg-[#0052CC] transition-transform hover:scale-[1.02] active:scale-95 shadow-2xl">
-                                    Submit Application →
-                                </button>
-                                <p className="mt-6 text-center text-white/40 font-bold">
-                                    I personally review every application within 48 hours.
-                                </p>
-                            </div>
-                        </form>
+                        <FitnessForm />
                     </div>
                 </div>
             </section>
-        </main>
+        </main >
     );
 }

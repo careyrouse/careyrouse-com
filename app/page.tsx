@@ -10,19 +10,19 @@ export default function Home() {
       <section className="relative flex min-h-screen flex-col items-center justify-start">
         {/* Background image */}
         <Image
-          src="https://careyrouse.com/wp-content/uploads/2026/01/beach.webp"
+          src="/images/beach.webp"
           alt="Beach background"
           fill
           className="object-cover object-right-center"
           priority
         />
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/70" />
+        <div className="absolute inset-0 bg-black/40 md:bg-black/70" />
 
         {/* Hero content */}
         <div className="relative z-10 mx-auto flex w-full max-w-[1280px] flex-1 flex-col justify-start px-4 pt-20 pb-20 md:px-6">
           <div className="max-w-2xl">
-            <h1 className="text-[56px] font-black leading-[1.05] tracking-tight md:text-[88px] lg:text-[100px] text-white">
+            <h1 className="text-[40px] font-black leading-[1.05] tracking-tight md:text-[88px] lg:text-[100px] text-white">
               Design A Life You Actually Want To Live
             </h1>
             <p className="mt-4 text-[24px] font-bold leading-tight tracking-tight text-white md:text-[32px] lg:text-[40px]">
@@ -58,7 +58,7 @@ export default function Home() {
       ═══════════════════════════════════════════ */}
       <section className="bg-white px-4 py-24 md:px-6 md:py-32">
         <div className="mx-auto max-w-[1280px]">
-          <h2 className="text-left text-[40px] font-black leading-tight tracking-tight md:text-[56px] lg:text-[64px] text-black">
+          <h2 className="text-left text-[32px] font-black leading-tight tracking-tight md:text-[56px] lg:text-[64px] text-black">
             Change As The Human Arc
           </h2>
           <p className="mt-2 pb-[30px] text-left text-[20px] font-bold leading-[28px] text-black md:text-[24px] md:leading-[32px]">
@@ -85,7 +85,7 @@ export default function Home() {
       ═══════════════════════════════════════════ */}
       <section className="bg-white px-4 py-24 md:px-6 md:py-32">
         <div className="mx-auto max-w-[1280px]">
-          <h2 className="text-left text-[40px] font-black leading-tight tracking-tight md:text-[56px] lg:text-[64px] text-black">
+          <h2 className="text-left text-[32px] font-black leading-tight tracking-tight md:text-[56px] lg:text-[64px] text-black">
             One Framework – Two Entry Points
           </h2>
           <p className="mt-2 pb-[30px] text-left text-[18px] leading-[26px] text-black md:text-[20px] md:leading-[28px]">
@@ -154,7 +154,7 @@ export default function Home() {
       ═══════════════════════════════════════════ */}
       <section className="bg-white px-4 py-24 md:px-6 md:py-32">
         <div className="mx-auto max-w-[1280px]">
-          <h2 className="text-left text-[40px] font-black leading-tight tracking-tight md:text-[56px] lg:text-[64px] text-black">
+          <h2 className="text-left text-[32px] font-black leading-tight tracking-tight md:text-[56px] lg:text-[64px] text-black">
             Systems Beat Motivation
           </h2>
           <p className="mt-2 pb-[30px] text-left text-[18px] leading-[26px] text-black md:text-[20px] md:leading-[28px]">
@@ -175,7 +175,7 @@ export default function Home() {
             {/* Headshot */}
             <div className="flex justify-center">
               <Image
-                src="https://careyrouse.com/wp-content/uploads/2026/01/2000-2000-headshot-January-1024x1024.webp"
+                src="/images/2000-2000 headshot January.webp"
                 alt="Carey Rouse headshot"
                 width={640}
                 height={640}
@@ -185,7 +185,7 @@ export default function Home() {
 
             {/* Text */}
             <div className="flex flex-col self-center">
-              <h2 className="text-left text-[40px] font-black leading-tight tracking-tight md:text-[56px] lg:text-[64px] text-black">
+              <h2 className="text-left text-[32px] font-black leading-tight tracking-tight md:text-[56px] lg:text-[64px] text-black">
                 Meet Carey Rouse
               </h2>
               <p className="mt-4 text-[18px] leading-[26px] text-black md:text-[20px] md:leading-[28px]">
@@ -208,7 +208,7 @@ export default function Home() {
       ═══════════════════════════════════════════ */}
       <section className="bg-white px-4 py-24 md:px-6 md:py-32">
         <div className="mx-auto max-w-[1280px]">
-          <h2 className="mb-12 text-center text-[40px] font-black leading-tight tracking-tight md:text-[56px] lg:text-[64px] text-black">
+          <h2 className="mb-12 text-center text-[32px] font-black leading-tight tracking-tight md:text-[56px] lg:text-[64px] text-black">
             Start Here
           </h2>
           <div className="grid grid-cols-1 items-center gap-4 sm:grid-cols-2 sm:justify-items-center">

@@ -4,61 +4,61 @@ import Link from "next/link";
 
 const galleryImages = [
     {
-        src: "https://careyrouse.com/wp-content/uploads/2026/01/Fort-Smith-Fitness-Shoot-56-scaled.webp",
+        src: "/images/Fort Smith Fitness Shoot-56.webp",
         width: 2560,
         height: 1706,
         alt: "Carey Rouse side flex",
     },
     {
-        src: "https://careyrouse.com/wp-content/uploads/2026/01/Austin_2025_016.webp",
+        src: "/images/Austin_2025_016.webp",
         width: 1681,
         height: 892,
         alt: "Carey Rouse group ride",
     },
     {
-        src: "https://careyrouse.com/wp-content/uploads/2025/06/chin-ups-scaled.webp",
+        src: "/images/chin ups.webp",
         width: 1799,
         height: 2560,
         alt: "Carey Rouse Chin-ups for Austin Fit Magazine competition",
     },
     {
-        src: "https://careyrouse.com/wp-content/uploads/2025/06/carey-sprinting.webp",
+        src: "/images/carey sprinting.webp",
         width: 1086,
         height: 1415,
         alt: "Carey Rouse bike Sprinting",
     },
     {
-        src: "https://careyrouse.com/wp-content/uploads/2025/06/closeup-tri.webp",
+        src: "/images/closeup tri.webp",
         width: 989,
         height: 988,
         alt: "Carey Rouse Tri",
     },
     {
-        src: "https://careyrouse.com/wp-content/uploads/2025/06/group-ride-scaled.webp",
+        src: "/images/group ride.webp",
         width: 2560,
         height: 1533,
         alt: "Carey Rouse Group Training Ride",
     },
     {
-        src: "https://careyrouse.com/wp-content/uploads/2025/06/guadalupe-peak-scaled.webp",
+        src: "/images/guadalupe peak.webp",
         width: 2560,
         height: 1920,
         alt: "Carey Rouse Guadalupe Peak",
     },
     {
-        src: "https://careyrouse.com/wp-content/uploads/2025/06/medals-scaled.webp",
+        src: "/images/medals.webp",
         width: 1707,
         height: 2560,
         alt: "Carey Rouse Bodybuilding Medals",
     },
     {
-        src: "https://careyrouse.com/wp-content/uploads/2025/06/race-pose-scaled.webp",
+        src: "/images/race pose.webp",
         width: 2560,
         height: 1709,
         alt: "Carey Rouse with racecar",
     },
     {
-        src: "https://careyrouse.com/wp-content/uploads/2025/06/zoot.webp",
+        src: "/images/zoot.webp",
         width: 1061,
         height: 1080,
         alt: "Carey Rouse Zoot Triathlon",
@@ -80,18 +80,18 @@ export default function AboutPage() {
             <section className="relative flex min-h-screen flex-col items-center justify-center">
                 {/* Background image */}
                 <Image
-                    src="https://careyrouse.com/wp-content/uploads/2025/06/Fort-Smith-Fitness-Shoot-20-1-scaled.webp"
+                    src="/images/cable pulls.webp"
                     alt="Carey Rouse holding weight stack cables"
                     fill
                     className="object-cover object-center"
                     priority
                 />
                 {/* Dark overlay */}
-                <div className="absolute inset-0 bg-black/70" />
+                <div className="absolute inset-0 bg-black/40 md:bg-black/70" />
 
                 {/* Hero content */}
                 <div className="relative z-10 mx-auto flex w-full max-w-[1280px] flex-col items-start justify-center px-4 md:px-6">
-                    <h1 className="text-[56px] font-black leading-[1.05] tracking-tight md:text-[88px] lg:text-[100px] text-white">
+                    <h1 className="text-[40px] font-black leading-[1.05] tracking-tight md:text-[88px] lg:text-[100px] text-white">
                         ABOUT CAREY ROUSE
                     </h1>
                     <p className="mt-4 text-[20px] font-bold leading-[28px] text-white md:text-[24px] md:leading-[32px]">
@@ -105,7 +105,7 @@ export default function AboutPage() {
       ═══════════════════════════════════════════ */}
             <section className="bg-white px-4 py-24 md:px-6 md:py-32">
                 <div className="mx-auto max-w-[1280px]">
-                    <h2 className="text-left text-[40px] font-black leading-tight md:text-[56px] lg:text-[64px] text-black">
+                    <h2 className="text-left text-[32px] font-black leading-tight md:text-[56px] lg:text-[64px] text-black">
                         The Journey: Forged by Discipline
                     </h2>
                     <p className="mt-2 pb-[30px] text-left text-[18px] leading-[26px] text-black md:text-[20px] md:leading-[28px]">
@@ -153,7 +153,7 @@ export default function AboutPage() {
       ═══════════════════════════════════════════ */}
             <section className="bg-white px-4 py-24 md:px-6 md:py-32">
                 <div className="mx-auto max-w-[1280px]">
-                    <h2 className="text-left text-[40px] font-black leading-tight md:text-[56px] lg:text-[64px] text-black">
+                    <h2 className="text-left text-[32px] font-black leading-tight md:text-[56px] lg:text-[64px] text-black">
                         Structured Accountability. Real Change.
                     </h2>
                     <p className="mt-2 pb-[30px] text-left text-[18px] leading-[26px] text-black md:text-[20px] md:leading-[28px]">
@@ -233,7 +233,7 @@ export default function AboutPage() {
       ═══════════════════════════════════════════ */}
             <section className="bg-white px-4 py-24 md:px-6 md:py-32">
                 <div className="mx-auto max-w-[1280px]">
-                    <h2 className="text-left text-[40px] font-black leading-tight md:text-[56px] lg:text-[64px] text-black">
+                    <h2 className="text-left text-[32px] font-black leading-tight md:text-[56px] lg:text-[64px] text-black">
                         Your Power to Build
                     </h2>
                     <p className="mt-2 text-left text-[18px] leading-[26px] text-black md:text-[20px] md:leading-[28px]">

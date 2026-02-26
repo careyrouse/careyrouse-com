@@ -95,37 +95,37 @@ export default function LifeCoachingPage() {
             {/* ═══════════════════════════════════════════
           SECTION 1 — REFINED HERO (MERGED SCRIPT)
       ═══════════════════════════════════════════ */}
-            <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-black text-white">
+            <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-white text-black">
                 {/* Background Image Container */}
                 <div className="absolute inset-0 z-0 scale-105 pointer-events-none">
                     <Image
-                        src="https://careyrouse.com/wp-content/uploads/2025/06/Fort-Smith-Fitness-Shoot-20-1-scaled.webp"
+                        src="/images/open arms.webp"
                         alt="Carey Rouse Life Coaching"
                         fill
-                        className="object-cover object-center opacity-70"
+                        className="object-cover object-center opacity-80"
                         priority
                     />
-                    {/* Dark Overlay for overlaying text readability */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/40 to-transparent" />
+                    {/* Light Overlay for overlaying text readability */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-white via-white/40 md:via-white/50 to-transparent" />
                 </div>
 
                 {/* Hero Content — Left Aligned, Merged Text */}
                 <div className="relative z-10 mx-auto w-full max-w-[1440px] px-6 py-32 md:px-12 lg:px-24">
                     <div className="max-w-4xl text-left">
                         {/* Huge Heading */}
-                        <h1 className="text-[56px] font-black leading-[1.05] tracking-tight md:text-[88px] lg:text-[100px]">
+                        <h1 className="text-[40px] font-black leading-[1.05] tracking-tight md:text-[88px] lg:text-[100px]">
                             Stop Living <br className="hidden md:block" />
                             Someone Else’s <br className="hidden md:block" />
                             Script
                         </h1>
 
                         {/* High Impact Subtext */}
-                        <p className="mt-10 text-2xl font-bold leading-relaxed text-white/95 md:text-3xl lg:text-4xl max-w-3xl">
+                        <p className="mt-10 text-2xl font-bold leading-relaxed text-black/95 md:text-3xl lg:text-4xl max-w-3xl">
                             You sense there is more for you. This is how you stop thinking about it and start proving it through daily action, tracking, and accountability.
                         </p>
 
                         {/* Full Script Text Integrated into Hero */}
-                        <div className="mt-12 space-y-6 text-xl md:text-2xl text-white/80 max-w-2xl font-medium leading-relaxed">
+                        <div className="mt-12 space-y-6 text-xl md:text-2xl text-black/80 max-w-2xl font-medium leading-relaxed">
                             <p>
                                 If your life looks fine on paper but feels wrong in practice, you are not broken.
                                 You are living a script you never consciously chose.
@@ -134,7 +134,7 @@ export default function LifeCoachingPage() {
                                 Life coaching with me is not about motivation or endless conversation.
                                 It is about picking one meaningful change, building a simple structure around it, and executing long enough for your identity to shift.
                             </p>
-                            <div className="pt-4 space-y-1 font-bold italic text-white">
+                            <div className="pt-4 space-y-1 font-bold italic text-black">
                                 <p>No application.</p>
                                 <p>No assessment.</p>
                                 <p>Just a short call to see if this is the right fit.</p>
@@ -146,11 +146,11 @@ export default function LifeCoachingPage() {
                             <Link
                                 href="https://calendar.app.google/fSTvE2DQeuG24fGh8"
                                 target="_blank"
-                                className="rounded bg-white px-12 py-6 text-center text-xl font-black text-black transition-all hover:scale-105 hover:bg-white/90 active:scale-95"
+                                className="rounded bg-black px-12 py-6 text-center text-xl font-black text-white transition-all hover:scale-105 hover:bg-black/90 active:scale-95"
                             >
                                 Book A Free 15-Minute Call
                             </Link>
-                            <Link href="#faq" className="text-xl font-bold text-white/60 hover:text-white transition-colors border-b border-white/20 pb-1">
+                            <Link href="#faq" className="text-xl font-bold text-black/60 hover:text-black transition-colors border-b border-black/20 pb-1">
                                 Have questions? See the full FAQ ↓
                             </Link>
                         </div>
@@ -165,7 +165,7 @@ export default function LifeCoachingPage() {
                 <div className="mx-auto w-full max-w-[1440px] px-6 md:px-12 lg:px-24">
                     <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
                         <div>
-                            <h2 className="text-[40px] font-black leading-tight md:text-[56px] lg:text-[64px]">How We <br />Work Together</h2>
+                            <h2 className="text-[32px] font-black leading-tight md:text-[56px] lg:text-[64px]">How We <br />Work Together</h2>
                         </div>
                         <div className="space-y-8 text-2xl leading-relaxed text-black/80">
                             <p className="font-bold text-black">Life coaching is built around the Achieve Anything Framework.</p>
@@ -185,7 +185,7 @@ export default function LifeCoachingPage() {
       ═══════════════════════════════════════════ */}
             <section className="bg-[#111] py-32 text-white">
                 <div className="mx-auto w-full max-w-[1440px] px-6 md:px-12 lg:px-24">
-                    <h2 className="text-center text-[40px] font-black md:text-[56px] lg:text-[64px]">What You Get</h2>
+                    <h2 className="text-center text-[32px] font-black md:text-[56px] lg:text-[64px]">What You Get</h2>
 
                     <div className="mt-20 overflow-x-auto rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md">
                         <table className="w-full text-left min-w-[800px]">
@@ -246,7 +246,7 @@ export default function LifeCoachingPage() {
       ═══════════════════════════════════════════ */}
             <section className="bg-white py-32">
                 <div className="mx-auto w-full max-w-[1440px] px-6 md:px-12 lg:px-24">
-                    <h2 className="text-center text-[40px] font-black md:text-[56px] lg:text-[64px]">Results</h2>
+                    <h2 className="text-center text-[32px] font-black md:text-[56px] lg:text-[64px]">Results</h2>
                     <div className="mt-20 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
                         {testimonials.map((t, i) => (
                             <div key={i} className="group relative flex flex-col justify-between rounded-[40px] bg-[#F9F9F9] p-12 transition-all hover:bg-black hover:text-white border border-black/5 hover:border-black/0 hover:-translate-y-2 duration-500">
@@ -292,7 +292,7 @@ export default function LifeCoachingPage() {
       ═══════════════════════════════════════════ */}
             <section id="faq" className="mx-auto w-full max-w-[1440px] px-6 py-40 md:px-12 lg:px-24">
                 <div className="max-w-4xl mx-auto">
-                    <h2 className="text-[40px] font-black md:text-[56px] lg:text-[64px]">Common Questions</h2>
+                    <h2 className="text-[32px] font-black md:text-[56px] lg:text-[64px]">Common Questions</h2>
                     <div className="mt-20 divide-y divide-black/10 border-y border-black/10">
                         {faqItems.map((item, i) => (
                             <details key={i} className="group py-10 transition-all hover:bg-[#F9F9F9] px-4 md:px-8">
@@ -336,7 +336,7 @@ export default function LifeCoachingPage() {
       ═══════════════════════════════════════════ */}
             <section className="bg-white py-32 border-t border-black/5">
                 <div className="mx-auto w-full max-w-[800px] px-6 text-center">
-                    <h2 className="text-[40px] font-black tracking-tight">Stay Updated</h2>
+                    <h2 className="text-[32px] font-black tracking-tight">Stay Updated</h2>
                     <p className="mt-6 text-xl font-bold text-black/40">Subscribe for the latest insights and inspiration.</p>
 
                     <div className="mt-16">
