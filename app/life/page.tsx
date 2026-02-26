@@ -91,7 +91,7 @@ const faqItems = [
 
 export default function LifeCoachingPage() {
     return (
-        <main className="bg-white text-black font-sans antialiased">
+        <main className="bg-white text-black font-sans antialiased overflow-x-hidden">
             {/* ═══════════════════════════════════════════
           SECTION 1 — REFINED HERO (MERGED SCRIPT)
       ═══════════════════════════════════════════ */}
@@ -110,7 +110,7 @@ export default function LifeCoachingPage() {
                 </div>
 
                 {/* Hero Content — Left Aligned, Merged Text */}
-                <div className="relative z-10 mx-auto w-full max-w-[1440px] px-6 py-32 md:px-12 lg:px-24">
+                <div className="relative z-10 mx-auto w-full max-w-[1440px] px-6 pt-4 pb-24 md:pt-24 md:px-12 lg:px-24">
                     <div className="max-w-4xl text-left">
                         {/* Huge Heading */}
                         <h1 className="text-[40px] font-black leading-[1.05] tracking-tight md:text-[88px] lg:text-[100px]">
@@ -124,6 +124,17 @@ export default function LifeCoachingPage() {
                             You sense there is more for you. This is how you stop thinking about it and start proving it through daily action, tracking, and accountability.
                         </p>
 
+                        {/* CTAs */}
+                        <div className="mt-12">
+                            <Link
+                                href="https://calendar.app.google/fSTvE2DQeuG24fGh8"
+                                target="_blank"
+                                className="inline-block rounded-full bg-black px-12 py-6 text-center text-xl font-black text-white transition-all hover:scale-105 hover:bg-black/90 active:scale-95 shadow-2xl"
+                            >
+                                Book A Free 15-Minute Call
+                            </Link>
+                        </div>
+
                         {/* Full Script Text Integrated into Hero */}
                         <div className="mt-12 space-y-6 text-xl md:text-2xl text-black/80 max-w-2xl font-medium leading-relaxed">
                             <p>
@@ -134,25 +145,11 @@ export default function LifeCoachingPage() {
                                 Life coaching with me is not about motivation or endless conversation.
                                 It is about picking one meaningful change, building a simple structure around it, and executing long enough for your identity to shift.
                             </p>
-                            <div className="pt-4 space-y-1 font-bold italic text-black">
-                                <p>No application.</p>
-                                <p>No assessment.</p>
-                                <p>Just a short call to see if this is the right fit.</p>
+                            <div className="pt-2">
+                                <Link href="#faq" className="inline-block text-xl font-bold text-[#0066FF] hover:text-[#0052CC] transition-colors">
+                                    Have questions? See the full FAQ ↓
+                                </Link>
                             </div>
-                        </div>
-
-                        {/* CTAs */}
-                        <div className="mt-16 flex flex-col gap-6 sm:flex-row sm:items-center">
-                            <Link
-                                href="https://calendar.app.google/fSTvE2DQeuG24fGh8"
-                                target="_blank"
-                                className="rounded-full bg-black px-12 py-6 text-center text-xl font-black text-white transition-all hover:scale-105 hover:bg-black/90 active:scale-95"
-                            >
-                                Book A Free 15-Minute Call
-                            </Link>
-                            <Link href="#faq" className="text-xl font-bold text-black/60 hover:text-black transition-colors border-b border-black/20 pb-1">
-                                Have questions? See the full FAQ ↓
-                            </Link>
                         </div>
                     </div>
                 </div>
@@ -187,56 +184,90 @@ export default function LifeCoachingPage() {
                 <div className="mx-auto w-full max-w-[1440px] px-6 md:px-12 lg:px-24">
                     <h2 className="text-center text-[32px] font-black md:text-[56px] lg:text-[64px]">What You Get</h2>
 
-                    <div className="mt-20 overflow-x-auto rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md">
-                        <table className="w-full text-left min-w-[800px]">
-                            <thead>
-                                <tr className="border-b border-white/10">
-                                    <th className="px-10 py-8 text-2xl font-black uppercase tracking-widest text-white/40">Feature</th>
-                                    <th className="px-10 py-8 text-2xl font-black uppercase tracking-widest text-[#0066FF]">Achieve Anything Framework</th>
-                                </tr>
-                            </thead>
-                            <tbody className="divide-y divide-white/5">
-                                <tr>
-                                    <td className="px-10 py-8 text-xl font-black text-white/60">Format</td>
-                                    <td className="px-10 py-8 text-xl font-medium">Remote life coaching with weekly calls and daily accountability</td>
-                                </tr>
-                                <tr>
-                                    <td className="px-10 py-8 text-xl font-black text-white/60">Focus</td>
-                                    <td className="px-10 py-8 text-xl font-medium">One meaningful life change at a time, executed through a structured 8-week cycle</td>
-                                </tr>
-                                <tr>
-                                    <td className="px-10 py-8 text-xl font-black text-white/60">Onboarding</td>
-                                    <td className="px-10 py-8 text-xl font-medium">A private one-hour meeting to get you completely ramped up on the framework and to answer all your questions</td>
-                                </tr>
-                                <tr>
-                                    <td className="px-10 py-8 text-xl font-black text-white/60">Weekly Coaching</td>
-                                    <td className="px-10 py-8 text-xl font-medium">One 30-minute 1:1 call each week focused on execution, friction removal, and adjustments</td>
-                                </tr>
-                                <tr>
-                                    <td className="px-10 py-8 text-xl font-black text-white/60">Daily Accountability</td>
-                                    <td className="px-10 py-8 text-xl font-medium">Short daily text or email check-in confirming what you did and what is next</td>
-                                </tr>
-                                <tr>
-                                    <td className="px-10 py-8 text-xl font-black text-white/60">Framework App</td>
-                                    <td className="px-10 py-8">
-                                        <div className="text-xl font-medium">Full access for tracking, structure, and follow-through.</div>
-                                        <div className="mt-4 p-4 rounded-xl bg-red-600/10 border border-red-600/20 text-red-500 font-bold uppercase text-sm tracking-widest">
-                                            The app is always free to use on your own at any time.
-                                        </div>
-                                        <Link href="https://aaframework.replit.app/login" target="_blank" className="mt-4 inline-block text-[#0066FF] font-bold underline hover:text-[#3385FF] transition-colors">
-                                            Launch App →
-                                        </Link>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td className="px-10 py-8 text-xl font-black text-white/60">Investment</td>
-                                    <td className="px-10 py-8">
-                                        <div className="text-4xl font-black text-white">$1,000 / month</div>
-                                        <div className="mt-2 text-white/40 font-medium italic">Month-to-month, cancel anytime.</div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div className="mt-12 md:mt-20">
+                        {/* Mobile Cards View (Hidden on larger screens) */}
+                        <div className="block md:hidden space-y-6">
+                            {[
+                                { title: "Format", desc: "Remote life coaching with weekly calls and daily accountability" },
+                                { title: "Focus", desc: "One meaningful life change at a time, executed through a structured 8-week cycle" },
+                                { title: "Onboarding", desc: "A private one-hour meeting to get you completely ramped up on the framework and to answer all your questions" },
+                                { title: "Weekly Coaching", desc: "One 30-minute 1:1 call each week focused on execution, friction removal, and adjustments" },
+                                { title: "Daily Accountability", desc: "Short daily text or email check-in confirming what you did and what is next" },
+                            ].map((feature, idx) => (
+                                <div key={idx} className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md">
+                                    <div className="text-sm font-black uppercase tracking-widest text-[#0066FF] mb-2">{feature.title}</div>
+                                    <div className="text-lg font-medium leading-relaxed text-white/90">{feature.desc}</div>
+                                </div>
+                            ))}
+                            <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md">
+                                <div className="text-sm font-black uppercase tracking-widest text-[#0066FF] mb-2">Framework App</div>
+                                <div className="text-lg font-medium leading-relaxed text-white/90">Full access for tracking, structure, and follow-through.</div>
+                                <div className="mt-4 p-4 rounded-xl bg-red-600/10 border border-red-600/20 text-red-500 font-bold uppercase text-xs tracking-widest">
+                                    The app is always free to use on your own at any time.
+                                </div>
+                                <Link href="https://aaframework.replit.app/login" target="_blank" className="mt-4 inline-block text-[#0066FF] font-bold underline hover:text-[#3385FF] transition-colors">
+                                    Launch App →
+                                </Link>
+                            </div>
+                            <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md">
+                                <div className="text-sm font-black uppercase tracking-widest text-[#0066FF] mb-2">Investment</div>
+                                <div className="text-4xl font-black text-white">$1,000 / month</div>
+                                <div className="mt-2 text-white/40 font-medium italic">Month-to-month, cancel anytime.</div>
+                            </div>
+                        </div>
+
+                        {/* Desktop Table View (Hidden on mobile) */}
+                        <div className="hidden md:block overflow-x-auto rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md">
+                            <table className="w-full text-left min-w-[800px]">
+                                <thead>
+                                    <tr className="border-b border-white/10">
+                                        <th className="px-10 py-8 text-2xl font-black uppercase tracking-widest text-white/40">Feature</th>
+                                        <th className="px-10 py-8 text-2xl font-black uppercase tracking-widest text-[#0066FF]">Achieve Anything Framework</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="divide-y divide-white/5">
+                                    <tr>
+                                        <td className="px-10 py-8 text-xl font-black text-white/60">Format</td>
+                                        <td className="px-10 py-8 text-xl font-medium">Remote life coaching with weekly calls and daily accountability</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="px-10 py-8 text-xl font-black text-white/60">Focus</td>
+                                        <td className="px-10 py-8 text-xl font-medium">One meaningful life change at a time, executed through a structured 8-week cycle</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="px-10 py-8 text-xl font-black text-white/60">Onboarding</td>
+                                        <td className="px-10 py-8 text-xl font-medium">A private one-hour meeting to get you completely ramped up on the framework and to answer all your questions</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="px-10 py-8 text-xl font-black text-white/60">Weekly Coaching</td>
+                                        <td className="px-10 py-8 text-xl font-medium">One 30-minute 1:1 call each week focused on execution, friction removal, and adjustments</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="px-10 py-8 text-xl font-black text-white/60">Daily Accountability</td>
+                                        <td className="px-10 py-8 text-xl font-medium">Short daily text or email check-in confirming what you did and what is next</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="px-10 py-8 text-xl font-black text-white/60">Framework App</td>
+                                        <td className="px-10 py-8">
+                                            <div className="text-xl font-medium">Full access for tracking, structure, and follow-through.</div>
+                                            <div className="mt-4 p-4 rounded-xl bg-red-600/10 border border-red-600/20 text-red-500 font-bold uppercase text-sm tracking-widest">
+                                                The app is always free to use on your own at any time.
+                                            </div>
+                                            <Link href="https://aaframework.replit.app/login" target="_blank" className="mt-4 inline-block text-[#0066FF] font-bold underline hover:text-[#3385FF] transition-colors">
+                                                Launch App →
+                                            </Link>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td className="px-10 py-8 text-xl font-black text-white/60">Investment</td>
+                                        <td className="px-10 py-8">
+                                            <div className="text-4xl font-black text-white">$1,000 / month</div>
+                                            <div className="mt-2 text-white/40 font-medium italic">Month-to-month, cancel anytime.</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -244,15 +275,15 @@ export default function LifeCoachingPage() {
             {/* ═══════════════════════════════════════════
           SECTION 4 — TESTIMONIALS
       ═══════════════════════════════════════════ */}
-            <section className="bg-white py-32">
+            <section className="bg-white py-24 md:py-32">
                 <div className="mx-auto w-full max-w-[1440px] px-6 md:px-12 lg:px-24">
                     <h2 className="text-center text-[32px] font-black md:text-[56px] lg:text-[64px]">Results</h2>
-                    <div className="mt-20 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+                    <div className="mt-12 md:mt-20 grid grid-cols-1 gap-8 md:gap-12 md:grid-cols-2 lg:grid-cols-3">
                         {testimonials.map((t, i) => (
-                            <div key={i} className="group relative flex flex-col justify-between rounded-[40px] bg-[#F9F9F9] p-12 transition-all hover:bg-black hover:text-white border border-black/5 hover:border-black/0 hover:-translate-y-2 duration-500">
-                                <p className="text-2xl leading-relaxed italic opacity-80 group-hover:opacity-100 font-medium">"{t.text}"</p>
-                                <div className="mt-12">
-                                    <div className="h-px bg-black/10 group-hover:bg-white/10 mb-8" />
+                            <div key={i} className="group relative flex flex-col justify-between rounded-[40px] bg-[#F9F9F9] p-8 md:p-12 transition-all hover:bg-black hover:text-white border border-black/5 hover:border-black/0 hover:-translate-y-2 duration-500">
+                                <p className="text-lg md:text-2xl leading-relaxed italic opacity-80 group-hover:opacity-100 font-medium">"{t.text}"</p>
+                                <div className="mt-6 md:mt-12">
+                                    <div className="h-px bg-black/10 group-hover:bg-white/10 mb-4 md:mb-8" />
                                     <p className="text-xl font-black uppercase tracking-widest text-[#0066FF] group-hover:text-white">— {t.name}</p>
                                 </div>
                             </div>
@@ -290,17 +321,17 @@ export default function LifeCoachingPage() {
             {/* ═══════════════════════════════════════════
           SECTION 6 — FAQ
       ═══════════════════════════════════════════ */}
-            <section id="faq" className="mx-auto w-full max-w-[1440px] px-6 py-40 md:px-12 lg:px-24">
+            <section id="faq" className="mx-auto w-full max-w-[1440px] px-6 py-16 md:py-24 md:px-12 lg:px-24">
                 <div className="max-w-4xl mx-auto">
                     <h2 className="text-[32px] font-black md:text-[56px] lg:text-[64px]">Common Questions</h2>
-                    <div className="mt-20 divide-y divide-black/10 border-y border-black/10">
+                    <div className="mt-12 md:mt-20 divide-y divide-black/10 border-y border-black/10">
                         {faqItems.map((item, i) => (
-                            <details key={i} className="group py-10 transition-all hover:bg-[#F9F9F9] px-4 md:px-8">
-                                <summary className="flex cursor-pointer list-none items-center justify-between text-2xl font-black md:text-3xl">
+                            <details key={i} className="group py-6 transition-all hover:bg-[#F9F9F9] px-4 md:px-8">
+                                <summary className="flex cursor-pointer list-none items-center justify-between text-lg font-black md:text-2xl">
                                     <span>{item.question}</span>
-                                    <div className="flex-shrink-0 ml-4 font-light text-5xl transition-transform duration-500 group-open:rotate-45">+</div>
+                                    <div className="flex-shrink-0 ml-4 font-light text-3xl transition-transform duration-500 group-open:rotate-45">+</div>
                                 </summary>
-                                <div className="mt-8 text-2xl leading-relaxed text-black/60 font-medium max-w-3xl">
+                                <div className="mt-4 text-lg md:text-xl leading-relaxed text-black/60 font-medium max-w-3xl">
                                     {item.answer}
                                 </div>
                             </details>
@@ -312,18 +343,18 @@ export default function LifeCoachingPage() {
             {/* ═══════════════════════════════════════════
           SECTION 7 — FINAL CONVERSATION CTA
       ═══════════════════════════════════════════ */}
-            <section className="bg-black py-40 text-white">
+            <section className="bg-black pt-24 pb-16 md:py-40 text-white">
                 <div className="mx-auto w-full max-w-[1000px] px-6 text-center">
-                    <h2 className="text-[56px] font-black leading-[0.95] md:text-[88px]">Start with a conversation.</h2>
+                    <h2 className="text-[40px] sm:text-[56px] font-black leading-[0.95] md:text-[88px]">Start with a conversation.</h2>
                     <p className="mt-12 text-2xl font-bold opacity-60 md:text-3xl lg:text-4xl">
                         The call is simply to confirm fit and next steps.
                         If it isn't the right tool, I'll tell you.
                     </p>
-                    <div className="mt-20">
+                    <div className="mt-16 md:mt-20">
                         <Link
                             href="https://calendar.app.google/fSTvE2DQeuG24fGh8"
                             target="_blank"
-                            className="inline-block rounded-full bg-white px-16 py-8 text-2xl font-black text-black transition-all hover:scale-105 hover:bg-white/95 active:scale-95 shadow-2xl shadow-white/5"
+                            className="inline-block rounded-full bg-white px-6 py-6 sm:px-16 sm:py-8 text-xl sm:text-2xl font-black text-black transition-all hover:scale-105 hover:bg-white/95 active:scale-95 shadow-2xl shadow-white/5 w-full max-w-[360px] sm:w-auto sm:max-w-none"
                         >
                             Book A Free 15-Minute Call
                         </Link>
@@ -331,47 +362,6 @@ export default function LifeCoachingPage() {
                 </div>
             </section>
 
-            {/* ═══════════════════════════════════════════
-          SECTION 8 — STAY UPDATED (FOOTER CTA)
-      ═══════════════════════════════════════════ */}
-            <section className="bg-white py-32 border-t border-black/5">
-                <div className="mx-auto w-full max-w-[800px] px-6 text-center">
-                    <h2 className="text-[32px] font-black tracking-tight">Subscribe</h2>
-                    <p className="mt-4 text-xl font-bold text-black/40">For the latest insights and inspiration.</p>
-
-                    <div className="mt-8">
-                        <form
-                            action="https://app.kit.com/forms/8257969/subscriptions"
-                            method="post"
-                            data-sv-form="8257969"
-                            data-uid="6b7e084f63"
-                            data-format="inline"
-                            className="mx-auto max-w-md rounded-[32px] bg-white p-6 shadow-2xl shadow-black/5 flex flex-col gap-4 border border-black/5"
-                        >
-                            <input
-                                className="w-full rounded-xl bg-[#F9F9F9] px-4 py-3 text-[15px] font-bold text-black border-black/5 focus:border-[#0066FF] transition-all outline-none placeholder:text-black/20"
-                                type="text"
-                                name="fields[first_name]"
-                                placeholder="First Name"
-                                required
-                            />
-                            <input
-                                className="w-full rounded-xl bg-[#F9F9F9] px-4 py-3 text-[15px] font-bold text-black border-black/5 focus:border-[#0066FF] transition-all outline-none placeholder:text-black/20"
-                                type="email"
-                                name="email_address"
-                                placeholder="Your Email"
-                                required
-                            />
-                            <button
-                                className="w-full rounded-full bg-black px-12 py-3 text-[15px] font-black text-white hover:bg-[#111] transition-all hover:scale-[1.01] active:scale-95 shadow-xl"
-                                type="submit"
-                            >
-                                Subscribe
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </section>
         </main>
     );
 }

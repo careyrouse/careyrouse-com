@@ -37,13 +37,13 @@ export default function Home() {
             {/* CTA buttons */}
             <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
               <Link
-                href="https://careyrouse.com/life/"
+                href="/life"
                 className="inline-flex items-center justify-center rounded-full bg-black px-8 py-4 text-[18px] font-black leading-[24px] text-white text-center no-underline shadow-2xl transition-all hover:bg-black/80 hover:scale-[1.02] active:scale-95"
               >
                 Explore Life Coaching
               </Link>
               <Link
-                href="https://careyrouse.com/fitness"
+                href="/fitness"
                 className="inline-flex items-center justify-center rounded-full bg-black px-8 py-4 text-[18px] font-black leading-[24px] text-white text-center no-underline shadow-2xl transition-all hover:bg-black/80 hover:scale-[1.02] active:scale-95"
               >
                 Explore Fitness Coaching
@@ -117,7 +117,7 @@ export default function Home() {
               </p>
               <div>
                 <Link
-                  href="https://careyrouse.com/life/"
+                  href="/life"
                   className="inline-flex items-center justify-center rounded-full bg-black px-8 py-4 text-[16px] font-black leading-[24px] text-white text-center no-underline shadow-xl transition-all hover:bg-black/80 hover:scale-[1.02] active:scale-95"
                 >
                   Explore Life Coaching
@@ -138,7 +138,7 @@ export default function Home() {
               </p>
               <div>
                 <Link
-                  href="https://careyrouse.com/fitness"
+                  href="/fitness"
                   className="inline-flex items-center justify-center rounded-full bg-black px-8 py-4 text-[16px] font-black leading-[24px] text-white text-center no-underline shadow-xl transition-all hover:bg-black/80 hover:scale-[1.02] active:scale-95"
                 >
                   Explore Fitness Coaching
@@ -213,13 +213,13 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 items-center gap-6 sm:grid-cols-2 sm:justify-items-center">
             <Link
-              href="https://careyrouse.com/life/"
+              href="/life"
               className="inline-flex items-center justify-center rounded-full bg-black px-10 py-5 text-[18px] font-black leading-[24px] text-white text-center no-underline shadow-2xl transition-all hover:bg-black/80 hover:scale-[1.05] active:scale-95"
             >
               Explore Life Coaching
             </Link>
             <Link
-              href="https://careyrouse.com/fitness"
+              href="/fitness"
               className="inline-flex items-center justify-center rounded-full bg-black px-10 py-5 text-[18px] font-black leading-[24px] text-white text-center no-underline shadow-2xl transition-all hover:bg-black/80 hover:scale-[1.05] active:scale-95"
             >
               Explore Fitness Coaching
