@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
 import "./globals.css";
+import Footer from "@/components/Footer";
+import NextLink from "next/link";
 
 export const metadata: Metadata = {
   title: "Carey Rouse – Author & Coach | Relentless Discipline",
@@ -90,7 +92,7 @@ export default function RootLayout({
         <header className="sticky top-0 z-50 border-b border-black/10 bg-white">
           <div className="mx-auto flex max-w-[1280px] items-center justify-between px-4 py-3 md:px-6 lg:w-[90%]">
             {/* Logo */}
-            <Link href="/" className="shrink-0">
+            <NextLink href="/" className="shrink-0">
               <Image
                 src="/images/CR black on trans.webp"
                 alt="Carey Rouse"
@@ -99,18 +101,18 @@ export default function RootLayout({
                 className="h-[50px] w-auto"
                 priority
               />
-            </Link>
+            </NextLink>
 
             {/* Desktop Nav */}
             <nav className="hidden items-center gap-0 lg:flex">
               {navLinks.map((link) => (
-                <Link
+                <NextLink
                   key={link.href}
                   href={link.href}
                   className="px-[18px] py-[13px] text-[16px] leading-[24px] text-black no-underline transition-colors hover:text-[#0066FF]"
                 >
                   {link.label}
-                </Link>
+                </NextLink>
               ))}
             </nav>
 
@@ -144,13 +146,13 @@ export default function RootLayout({
           />
           <nav className="hidden flex-col border-t border-black/10 bg-white peer-checked:flex lg:!hidden">
             {navLinks.map((link) => (
-              <Link
+              <NextLink
                 key={link.href}
                 href={link.href}
                 className="px-6 py-3 text-[16px] text-black no-underline hover:bg-black/5"
               >
                 {link.label}
-              </Link>
+              </NextLink>
             ))}
           </nav>
         </header>
@@ -159,147 +161,11 @@ export default function RootLayout({
         {children}
 
         {/* ═══════ FOOTER ═══════ */}
-        <footer className="border-t border-black bg-white">
-          <div className="mx-auto max-w-[1280px] px-4 pt-5 pb-20 md:px-6">
-            {/* Divider already via border-t above */}
-
-            {/* 3-column grid */}
-            <div className="grid grid-cols-1 gap-8 pt-4 sm:grid-cols-2 lg:grid-cols-[30%_30%_30%] lg:justify-center">
-              {/* Resources */}
-              <div className="flex flex-col gap-2 pl-2">
-                <h5 className="text-[24px] font-bold leading-[32px] text-black">
-                  Resources
-                </h5>
-                <ul className="flex flex-col gap-0 pl-4">
-                  {resourceLinks.map((link) => (
-                    <li key={link.href}>
-                      <Link
-                        href={link.href}
-                        className="block py-2 text-[14px] leading-[20px] text-black no-underline hover:text-[#0066FF]"
-                      >
-                        {link.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Work With Me */}
-              <div className="flex flex-col gap-2">
-                <h5 className="text-[24px] font-bold leading-[32px] text-black">
-                  Work With Me
-                </h5>
-                <ul className="flex flex-col gap-0 pl-4">
-                  {workLinks.map((link) => (
-                    <li key={link.href}>
-                      <Link
-                        href={link.href}
-                        className="block py-2 text-[14px] leading-[20px] text-black no-underline hover:text-[#0066FF]"
-                      >
-                        {link.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Stay Updated */}
-              <div className="flex flex-col gap-5">
-                <h5 className="text-[24px] font-bold leading-[32px] text-black">
-                  Stay Updated
-                </h5>
-                <p className="text-[14px] leading-[20px] text-black">
-                  Subscribe for the latest insights and inspiration.
-                </p>
-
-                {/* Kit.com embedded form */}
-                <form
-                  action="https://app.kit.com/forms/8257969/subscriptions"
-                  method="post"
-                  data-sv-form="8257969"
-                  data-uid="6b7e084f63"
-                  data-format="inline"
-                  className="formkit-form flex flex-col gap-2"
-                >
-                  <ul
-                    className="formkit-alert formkit-alert-error list-none p-0 text-sm text-red-600"
-                    data-element="errors"
-                    data-group="alert"
-                  />
-                  <div
-                    className="formkit-fields flex flex-col gap-2 sm:flex-row"
-                    data-element="fields"
-                  >
-                    <div className="formkit-field">
-                      <input
-                        className="formkit-input w-full rounded border border-black/20 bg-white px-4 py-3 text-sm text-black shadow-sm outline-none focus:border-[#0066FF] focus:ring-1 focus:ring-[#0066FF]"
-                        type="text"
-                        name="fields[first_name]"
-                        placeholder="First Name"
-                        aria-label="First Name"
-                        required
-                      />
-                    </div>
-                    <div className="formkit-field">
-                      <input
-                        className="formkit-input w-full rounded border border-black/20 bg-white px-4 py-3 text-sm text-black shadow-sm outline-none focus:border-[#0066FF] focus:ring-1 focus:ring-[#0066FF]"
-                        type="email"
-                        name="email_address"
-                        placeholder="Enter Your Email"
-                        aria-label="Enter Your Email"
-                        required
-                      />
-                    </div>
-                    <button
-                      className="formkit-submit cursor-pointer rounded bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-black/80 active:scale-95"
-                      data-element="submit"
-                      type="submit"
-                    >
-                      <span>Subscribe</span>
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-
-            {/* Bottom bar */}
-            <div className="mt-8 flex flex-col items-center gap-4 border-t border-black/10 pt-6 sm:flex-row sm:justify-between">
-              <p className="text-[14px] leading-[20px] text-black">
-                © 2026 Carey Rouse. All rights reserved.
-              </p>
-
-              <div className="flex items-center gap-4">
-                <Link
-                  href="/terms-and-conditions"
-                  className="text-[14px] leading-[20px] text-black no-underline hover:text-[#0066FF]"
-                >
-                  Terms and Conditions
-                </Link>
-                <Link
-                  href="/privacy-policy"
-                  className="text-[14px] leading-[20px] text-black no-underline hover:text-[#0066FF]"
-                >
-                  Privacy Policy
-                </Link>
-              </div>
-
-              <div className="flex items-center gap-3">
-                {socialLinks.map((social) => (
-                  <Link
-                    key={social.href}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={social.label}
-                    className="text-black transition-colors hover:text-[#0066FF]"
-                  >
-                    {social.icon}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </div>
-        </footer>
+        <Footer
+          resourceLinks={resourceLinks}
+          workLinks={workLinks}
+          socialLinks={socialLinks}
+        />
 
         {/* Kit.com JS (loaded after page) */}
         <Script

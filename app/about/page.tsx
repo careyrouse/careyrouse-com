@@ -178,7 +178,7 @@ export default function AboutPage() {
                                     href="https://calendar.app.google/fSTvE2DQeuG24fGh8"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="inline-flex items-center justify-center rounded bg-black px-6 py-3 text-[16px] font-semibold leading-[24px] text-white no-underline shadow transition-colors hover:bg-black/80"
+                                    className="inline-flex items-center justify-center rounded-full bg-black px-8 py-4 text-[16px] font-black leading-[24px] text-white no-underline shadow-xl transition-all hover:bg-black/80 hover:scale-[1.02] active:scale-95"
                                 >
                                     Book A Free 15-Minute Call
                                 </Link>
@@ -197,7 +197,7 @@ export default function AboutPage() {
                             <div>
                                 <Link
                                     href="https://careyrouse.com/fitness"
-                                    className="inline-flex items-center justify-center rounded bg-black px-6 py-3 text-[16px] font-semibold leading-[24px] text-white no-underline shadow transition-colors hover:bg-black/80"
+                                    className="inline-flex items-center justify-center rounded-full bg-black px-8 py-4 text-[16px] font-black leading-[24px] text-white no-underline shadow-xl transition-all hover:bg-black/80 hover:scale-[1.02] active:scale-95"
                                 >
                                     Apply For Assessment
                                 </Link>

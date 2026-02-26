@@ -72,24 +72,27 @@ export default function ChallengePage() {
                         <form
                             action="https://app.kit.com/forms/8257969/subscriptions"
                             method="post"
-                            className="flex flex-col gap-4"
+                            data-sv-form="8257969"
+                            data-uid="6b7e084f63"
+                            data-format="inline"
+                            className="flex flex-col gap-3"
                         >
                             <input
-                                className="w-full rounded-full border border-black/10 bg-white px-8 py-5 text-lg text-black outline-none focus:border-[#0066FF] focus:ring-1 focus:ring-[#0066FF]"
+                                className="w-full rounded-xl border border-black/5 bg-[#F9F9F9] px-4 py-3 text-[15px] font-bold text-black outline-none focus:border-[#0066FF] transition-all placeholder:text-black/20"
                                 type="text"
                                 name="fields[first_name]"
                                 placeholder="First Name"
                                 required
                             />
                             <input
-                                className="w-full rounded-full border border-black/10 bg-white px-8 py-5 text-lg text-black outline-none focus:border-[#0066FF] focus:ring-1 focus:ring-[#0066FF]"
+                                className="w-full rounded-xl border border-black/5 bg-[#F9F9F9] px-4 py-3 text-[15px] font-bold text-black outline-none focus:border-[#0066FF] transition-all placeholder:text-black/20"
                                 type="email"
                                 name="email_address"
                                 placeholder="Enter Your Email"
                                 required
                             />
                             <button
-                                className="w-full rounded-full bg-[#0066FF] py-5 text-xl font-black text-white transition-all hover:bg-[#0052CC] active:scale-95 shadow-2xl"
+                                className="w-full rounded-full bg-black py-4 text-[16px] font-black text-white transition-all hover:bg-black/80 hover:scale-[1.01] active:scale-95 shadow-2xl"
                                 type="submit"
                             >
                                 Start Now

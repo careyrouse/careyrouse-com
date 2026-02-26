@@ -158,7 +158,7 @@ export default function FitnessForm() {
                 <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full rounded-2xl bg-[#0066FF] py-6 text-2xl font-black text-white hover:bg-[#0052CC] transition-transform hover:scale-[1.02] active:scale-95 shadow-2xl disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full rounded-full bg-[#0066FF] py-6 text-2xl font-black text-white hover:bg-[#0052CC] transition-all hover:scale-[1.02] active:scale-95 shadow-2xl disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                     {isSubmitting ? "Sending Application..." : "Submit Application →"}
                 </button>

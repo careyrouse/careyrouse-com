@@ -18,9 +18,9 @@ function ConfirmationForm() {
 
     return (
         <form
-            action="https://app.kit.com/forms/8257969/subscriptions"
+            action="https://app.kit.com/forms/8282465/subscriptions"
             method="post"
-            data-sv-form="8257969"
+            data-sv-form="8282465"
             data-uid="6b7e084f63"
             data-format="inline"
             className="space-y-6"

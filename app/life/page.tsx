@@ -146,7 +146,7 @@ export default function LifeCoachingPage() {
                             <Link
                                 href="https://calendar.app.google/fSTvE2DQeuG24fGh8"
                                 target="_blank"
-                                className="rounded bg-black px-12 py-6 text-center text-xl font-black text-white transition-all hover:scale-105 hover:bg-black/90 active:scale-95"
+                                className="rounded-full bg-black px-12 py-6 text-center text-xl font-black text-white transition-all hover:scale-105 hover:bg-black/90 active:scale-95"
                             >
                                 Book A Free 15-Minute Call
                             </Link>
@@ -343,24 +343,27 @@ export default function LifeCoachingPage() {
                         <form
                             action="https://app.kit.com/forms/8257969/subscriptions"
                             method="post"
-                            className="mx-auto max-w-3xl rounded-[32px] bg-[#F6F6F6] p-4 shadow-2xl shadow-black/5 flex flex-col sm:flex-row gap-4 border border-black/5"
+                            data-sv-form="8257969"
+                            data-uid="6b7e084f63"
+                            data-format="inline"
+                            className="mx-auto max-w-md rounded-[32px] bg-white p-6 shadow-2xl shadow-black/5 flex flex-col gap-4 border border-black/5"
                         >
                             <input
-                                className="flex-1 rounded-2xl bg-white px-8 py-5 text-lg font-bold text-black border-transparent focus:border-[#0066FF]/30 transition-all outline-none"
+                                className="w-full rounded-xl bg-[#F9F9F9] px-4 py-3 text-[15px] font-bold text-black border-black/5 focus:border-[#0066FF] transition-all outline-none placeholder:text-black/20"
                                 type="text"
                                 name="fields[first_name]"
                                 placeholder="First Name"
                                 required
                             />
                             <input
-                                className="flex-1 rounded-2xl bg-white px-8 py-5 text-lg font-bold text-black border-transparent focus:border-[#0066FF]/30 transition-all outline-none"
+                                className="w-full rounded-xl bg-[#F9F9F9] px-4 py-3 text-[15px] font-bold text-black border-black/5 focus:border-[#0066FF] transition-all outline-none placeholder:text-black/20"
                                 type="email"
                                 name="email_address"
                                 placeholder="Your Email"
                                 required
                             />
                             <button
-                                className="rounded-2xl bg-black px-12 py-5 text-lg font-black text-white hover:bg-[#111] transition-all hover:scale-[1.02] active:scale-95"
+                                className="w-full rounded-full bg-black px-12 py-3 text-[15px] font-black text-white hover:bg-[#111] transition-all hover:scale-[1.01] active:scale-95 shadow-xl"
                                 type="submit"
                             >
                                 Subscribe
